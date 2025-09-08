@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stuart Ward & Sons | Plastering, Rendering & Damp Proofing in Anglesey & Gwynedd</title>
+  <meta name="description" content="30+ years of expert plastering, rendering & damp proofing across Anglesey, Gwynedd & North Wales. Smooth plaster finishes, durable rendering, and proven damp treatments. Get a fast quote.">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Centered Navbar (pill) -->
+  <nav class="navbar navbar-light hero-nav rounded-pill">
+    <div class="container-fluid hero-nav-inner">
+
+      <!-- Brand -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-bricks brand-icon" aria-hidden="true"></i>
+        <span class="brand-text">Stuart Ward &amp; Sons</span>
+      </a>
+
+      <!-- Desktop links -->
+      <div class="d-none d-lg-flex align-items-center gap-2">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#about">About</a>
+
+        <div class="dropdown">
+          <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</button>
+          <ul class="dropdown-menu rounded-4 shadow">
+            <li><a class="dropdown-item" href="#services">All Services</a></li>
+            <li><a class="dropdown-item" href="#plastering">Plastering</a></li>
+            <li><a class="dropdown-item" href="#damp">Damp Proofing</a></li>
+            <li><a class="dropdown-item" href="#rendering">Rendering</a></li>
+            <li><a class="dropdown-item" href="#general">General Building &amp; Painting</a></li>
+          </ul>
+        </div>
+
+        <a class="btn btn-accent rounded-pill ms-1" href="#quote">Get a Free Quote</a>
+      </div>
+
+      <!-- Mobile toggler -->
+      <button class="navbar-toggler d-lg-none ms-auto" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Mobile / Medium Menu -->
+  <div class="offcanvas offcanvas-top mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header align-items-center">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-bricks brand-icon fs-5"></i>
+        <span id="mobileMenuLabel" class="brand-text">Stuart Ward &amp; Sons</span>
+      </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="mobile-nav list-unstyled">
+        <li><a href="#" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+
+        <!-- Services accordion for mobile -->
+        <li class="mt-1">
+          <button class="mobile-accordion" data-bs-toggle="collapse" data-bs-target="#mobileServices" aria-expanded="false" aria-controls="mobileServices">
+            Services <i class="bi bi-chevron-down ms-1"></i>
+          </button>
+          <div class="collapse" id="mobileServices">
+            <ul class="list-unstyled ps-3 mt-2">
+              <li><a href="#services" class="mobile-sub">All Services</a></li>
+              <li><a href="#plastering" class="mobile-sub">Plastering</a></li>
+              <li><a href="#damp" class="mobile-sub">Damp Proofing</a></li>
+              <li><a href="#rendering" class="mobile-sub">Rendering</a></li>
+              <li><a href="#general" class="mobile-sub">General Building &amp; Painting</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mt-3">
+          <a href="#quote" class="btn btn-accent w-100 rounded-pill mobile-cta">Get a Free Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /Offcanvas -->
+
+  <!-- HERO (reference-style split) -->
+  <section class="hero-wrap">
+
+    <div class="container-xxl">
+      <div class="row g-0 align-items-center min-vh-100">
+
+        <!-- LEFT COLUMN -->
+        <div class="col-12 col-lg-6 d-flex">
+          <div class="left-content my-auto">
+            <!-- location chip -->
+            <div class="mb-3">
+              <span class="chip">Anglesey • Gwynedd • North Wales</span>
+            </div>
+
+            <!-- headline -->
+            <h1 class="display-heading">
+              Plastering, Rendering
+              <span class="d-block">& Damp Proofing</span>
+              <span class="d-block">in Anglesey & Gwynedd</span>
+            </h1>
+
+            <!-- Trust line with image placeholders -->
+<div class="trust-line d-flex align-items-center gap-2 mb-4">
+  <div class="avatars" aria-hidden="true">
+    <img src="client-1.jpg" alt="Local homeowner 1">
+    <img src="client-2.jpg" alt="Local homeowner 2">
+    <img src="client-3.jpg" alt="Local homeowner 3">
+  </div>
+  <small class="text-muted">Trusted by local homeowners</small>
+</div>
+
+<!-- CTA form (Web3Forms) -->
+<form class="cta-form" action="https://api.web3forms.com/submit" method="POST">
+  <!-- Replace with your real key from https://web3forms.com/ -->
+  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+  <input type="hidden" name="subject" value="New website enquiry (CTA)" />
+  <input type="hidden" name="from_name" value="Stuart Ward &amp; Sons Website" />
+  <!-- Optional: redirect to a thank-you page -->
+  <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you" /> -->
+  <!-- Honeypot -->
+  <input type="checkbox" name="botcheck" class="d-none" style="display:none;" tabindex="-1" autocomplete="off" />
+
+  <label for="cta-email" class="visually-hidden">Email</label>
+  <input id="cta-email" type="email" name="email" class="form-control email-input"
+         placeholder="Enter your email to get a fast quote" required>
+
+  <button type="submit" class="btn btn-accent btn-lg rounded-pill cta-btn">
+    <span class="circle-arrow"><i class="bi bi-arrow-right"></i></span>
+    Get a Fast Quote
+  </button>
+</form>
+
+
+            <!-- floating stats bar (bottom of left column) -->
+            <div class="stats-bar shadow-sm rounded-4">
+              <div class="row g-0 text-center">
+                <div class="col-6 col-md-3 stat">
+                  <div class="stat-k">Years in service</div>
+                  <div class="stat-v">30+</div>
+                </div>
+                <div class="col-6 col-md-3 stat">
+                  <div class="stat-k">Reply Rate</div>
+                  <div class="stat-v">100%</div>
+                </div>
+                <div class="col-6 col-md-3 stat">
+                  <div class="stat-k">Avg Rating</div>
+                  <div class="stat-v">4.9★</div>
+                </div>
+                <div class="col-6 col-md-3 stat">
+                  <div class="stat-k">Coverage</div>
+                  <div class="stat-v">80 miles</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN (image) -->
+        <div class="col-12 col-lg-6">
+          <div class="hero-img-outer">
+            <img src="hero-3.jpg" alt="Clean plastered interior with smooth finish and crisp corners" class="hero-img">
+            <button class="map-btn shadow-sm" aria-label="View coverage map"><i class="bi bi-map"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / INTRO SECTION -->
+<section id="about-intro" class="about-intro-section">
+  <!-- Big background image -->
+  <img
+    class="intro-img"
+    src="about-2.jpg"
+    alt="Clean, professionally finished interior wall and ceiling"
+  />
+
+  <!-- Overlay text (moves below image on mobile) -->
+  <div class="intro-content container-xxl">
+    <p class="eyebrow">• About Stuart Ward & Son</p>
+    <h2 class="intro-title">
+      Plastering specialists with 30+ years serving
+      <span class="d-block">Anglesey, Gwynedd &amp; North Wales</span>
+    </h2>
+
+    <p class="intro-copy">
+      Stuart Ward &amp; Sons are local experts in <strong>plastering</strong>,
+      <strong>rendering</strong>, and <strong>damp proofing</strong>. For more than
+      three decades we’ve delivered smooth plaster finishes, durable exterior
+      rendering, and proven damp treatments for homeowners, landlords and
+      small contractors across Anglesey, Gwynedd, and busy nearby areas including
+      Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno, Conwy, Chester and Liverpool.
+    </p>
+
+    <a class="btn btn-accent rounded-pill intro-cta" href="about.html">
+      Learn more About Us
+    </a>
+  </div>
+
+  <!-- Floating 3-row stats card -->
+  <aside class="intro-stats shadow-sm">
+    <div class="stat-row">
+      <div class="stat-num">1,200+</div>
+      <div class="stat-text">
+        Local rooms &amp; homes plastered
+      </div>
+      <i class="bi bi-emoji-smile"></i>
+    </div>
+    <hr />
+    <div class="stat-row">
+      <div class="stat-num">80&nbsp;miles</div>
+      <div class="stat-text">
+        Service radius across Anglesey &amp; Gwynedd
+      </div>
+      <i class="bi bi-geo-alt"></i>
+    </div>
+    <hr />
+    <div class="stat-row">
+      <div class="stat-num">4.9★</div>
+      <div class="stat-text">
+        Average rating from local homeowners
+      </div>
+      <i class="bi bi-star"></i>
+    </div>
+  </aside>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery-section">
+  <div class="container-xxl gallery-head text-center">
+    <p class="eyebrow mb-2">• Gallery</p>
+    <h2 class="intro-title mb-3">Inside Our Recent Projects</h2>
+    <a href="#contact" class="btn btn-accent rounded-pill fw-bold">
+      Get a Free Quote
+    </a>
+  </div>
+
+  <div class="gallery-grid container-xxl">
+    <!-- 01 -->
+    <figure class="g-item span-4 ratio-4x3">
+      <img src="interior-house.jpg" alt="Dining room plaster skim with crisp corners">
+      <figcaption class="g-cap">
+        <span class="g-num">01</span>
+        <span class="g-title">Dining Room</span>
+      </figcaption>
+    </figure>
+
+    <!-- 02 (center wide) -->
+    <figure class="g-item span-6 ratio-16x9">
+      <img src="bedroom-project.jpg" alt="Bedroom ceiling skim and painted finish">
+      <figcaption class="g-cap">
+        <span class="g-num">02</span>
+        <span class="g-title">Bedroom</span>
+      </figcaption>
+    </figure>
+
+    <!-- 03 -->
+    <figure class="g-item span-4 ratio-4x3">
+      <img src="bedroom-project-2.jpg" alt="Feature wall rendered and colour matched">
+      <figcaption class="g-cap">
+        <span class="g-num">03</span>
+        <span class="g-title">Creative Workspace</span>
+      </figcaption>
+    </figure>
+
+    <!-- 04 -->
+    <figure class="g-item span-4 ratio-4x3">
+      <img src="wall-plastering.jpg" alt="Kitchen plasterboard & bonding then skim coat">
+      <figcaption class="g-cap">
+        <span class="g-num">04</span>
+        <span class="g-title">Kitchen</span>
+      </figcaption>
+    </figure>
+
+    <!-- 05 (wide) -->
+    <figure class="g-item span-8 ratio-16x9">
+      <img src="kitchen-project.jpg" alt="Living room re-skim with smooth finish">
+      <figcaption class="g-cap">
+        <span class="g-num">05</span>
+        <span class="g-title">Living Room</span>
+      </figcaption>
+    </figure>
+
+    <!-- 06 -->
+    <figure class="g-item span-4 ratio-3x4">
+      <img src="bathroom-project.jpg" alt="Guest bedroom plaster & paint refresh">
+      <figcaption class="g-cap">
+        <span class="g-num">06</span>
+        <span class="g-title">Guest Bedroom</span>
+      </figcaption>
+    </figure>
+
+    <!-- 07 (taller) -->
+    <figure class="g-item span-4 ratio-3x4">
+      <img src="bathroom-project-2.jpg" alt="Decorative foyer skim and paint">
+      <figcaption class="g-cap">
+        <span class="g-num">07</span>
+        <span class="g-title">Decorative Foyer</span>
+      </figcaption>
+    </figure>
+
+    <!-- 08 (wide) -->
+    <figure class="g-item span-8 ratio-3x2">
+      <img src="living-room-project.jpg" alt="Home office plastering and finishing">
+      <figcaption class="g-cap">
+        <span class="g-num">08</span>
+        <span class="g-title">Home Office</span>
+      </figcaption>
+    </figure>
+
+    <!-- 09 -->
+    <figure class="g-item span-4 ratio-4x3">
+      <img src="living-room-project-2.jpg" alt="Bathroom tanking, tiling-ready finish">
+      <figcaption class="g-cap">
+        <span class="g-num">09</span>
+        <span class="g-title">Bathroom</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+
+
+  <!-- Quote anchor target -->
+  <section id="quote"></section>
+  
+  <!-- Anchors -->
+  <section id="quote"></section>
+  <section id="about"></section>
+  <section id="services"></section>
+  <section id="plastering"></section>
+  <section id="damp"></section>
+  <section id="rendering"></section>
+  <section id="general"></section>
+
+    <script>
+    // Close offcanvas when a mobile link is clicked
+    document.querySelectorAll('#mobileMenu a[href^="#"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        const oc = bootstrap.Offcanvas.getInstance(document.getElementById('mobileMenu'));
+        if (oc) oc.hide();
+      });
+    });
+    // Rotate chevron on accordion toggle
+    const accBtn = document.querySelector('.mobile-accordion');
+    const services = document.getElementById('mobileServices');
+    if (accBtn && services){
+      services.addEventListener('shown.bs.collapse', ()=>accBtn.classList.add('open'));
+      services.addEventListener('hidden.bs.collapse', ()=>accBtn.classList.remove('open'));
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
