@@ -17,6 +17,7 @@
 
   <!-- Custom -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 
@@ -185,7 +186,78 @@
     </div>
   </section>
 
-  <!-- ABOUT / INTRO SECTION -->
+<!-- ======== SERVICES (Main) ======== -->
+<section id="services" class="services-section">
+  <div class="container-xxl">
+
+    <!-- Head -->
+    <div class="services-head text-center">
+      <p class="eyebrow mb-2">• Services</p>
+      <h1 class="display-heading mb-2">Professional Plastering &amp; Property Services</h1>
+      <p class="sv-sub mb-4">
+        Serving <strong>Anglesey</strong>, <strong>Gwynedd</strong> &amp; <strong>North Wales</strong>, including
+        Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno, Conwy, Chester &amp; Liverpool. We deliver
+        <strong>interior &amp; exterior plastering</strong>, proven <strong>damp proofing</strong>, high-performance
+        <strong>rendering</strong>, and reliable <strong>general building</strong> for homeowners, landlords &amp; contractors.
+      </p>
+    </div>
+
+    <!-- 3-column layout (center highlight spans two rows) -->
+    <div class="sv-grid sv-main">
+      <!-- Left column (stack) -->
+      <article class="sv-card sv-item sv-left">
+        <div class="sv-item-text">
+          <h3 class="sv-title">Plastering (Interior &amp; Exterior)</h3>
+          <p class="sv-desc">Skimming, ceilings &amp; walls, plasterboard &amp; bonding, patch &amp; repair — smooth, paint-ready finishes.</p>
+        </div>
+        <span class="sv-ico" aria-hidden="true"><i class="bi bi-brush"></i></span>
+      </article>
+
+      <article class="sv-card sv-item sv-left">
+        <div class="sv-item-text">
+          <h3 class="sv-title">Damp Proofing</h3>
+          <p class="sv-desc">Rising damp treatments, tanking &amp; waterproofing, moisture diagnostics &amp; aftercare.</p>
+        </div>
+        <span class="sv-ico" aria-hidden="true"><i class="bi bi-droplet-half"></i></span>
+      </article>
+
+      <!-- Center highlight (spans 2 rows) -->
+      <article class="sv-card sv-highlight sv-center">
+        <div class="sv-highlight-inner">
+          <div class="sv-highlight-ico"><i class="bi bi-house-gear"></i></div>
+          <h4 class="sv-highlight-title">Complete Interior Finish Package</h4>
+          <p class="sv-highlight-desc">
+            From boarding &amp; bonding to final skim, patch &amp; repair, and finishing advice — a streamlined, dust-aware
+            workflow that gets rooms paint-ready quickly and cleanly.
+          </p>
+          <a href="#quote" class="btn btn-accent rounded-pill fw-bold">Get a Free Quote</a>
+        </div>
+      </article>
+
+      <!-- Right column (stack) -->
+      <article class="sv-card sv-item sv-right">
+        <div class="sv-item-text">
+          <h3 class="sv-title">Rendering</h3>
+          <p class="sv-desc">Sand &amp; cement, monocouche, silicone render &amp; colour matching for durable kerb appeal.</p>
+        </div>
+        <span class="sv-ico" aria-hidden="true"><i class="bi bi-bricks"></i></span>
+      </article>
+
+      <article class="sv-card sv-item sv-right">
+        <div class="sv-item-text">
+          <h3 class="sv-title">General Building</h3>
+          <p class="sv-desc">Brick &amp; blockwork, repointing, small extensions &amp; structural repairs to support your project.</p>
+        </div>
+        <span class="sv-ico" aria-hidden="true"><i class="bi bi-wrench-adjustable"></i></span>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ABOUT / INTRO SECTION (no floating card) -->
 <section id="about-intro" class="about-intro-section">
   <!-- Big background image -->
   <img
@@ -194,11 +266,11 @@
     alt="Clean, professionally finished interior wall and ceiling"
   />
 
-  <!-- Overlay text (moves below image on mobile) -->
+  <!-- Centered overlay text (moves below image on mobile) -->
   <div class="intro-content container-xxl">
-    <p class="eyebrow">• About Stuart Ward & Son</p>
+    <p class="eyebrow">• About Stuart Ward &amp; Son</p>
     <h2 class="intro-title">
-      Plastering specialists with 30+ years serving
+      Plastering specialists with 30+ years in
       <span class="d-block">Anglesey, Gwynedd &amp; North Wales</span>
     </h2>
 
@@ -215,36 +287,11 @@
       Learn more About Us
     </a>
   </div>
-
-  <!-- Floating 3-row stats card -->
-  <aside class="intro-stats shadow-sm">
-    <div class="stat-row">
-      <div class="stat-num">1,200+</div>
-      <div class="stat-text">
-        Local rooms &amp; homes plastered
-      </div>
-      <i class="bi bi-emoji-smile"></i>
-    </div>
-    <hr />
-    <div class="stat-row">
-      <div class="stat-num">80&nbsp;miles</div>
-      <div class="stat-text">
-        Service radius across Anglesey &amp; Gwynedd
-      </div>
-      <i class="bi bi-geo-alt"></i>
-    </div>
-    <hr />
-    <div class="stat-row">
-      <div class="stat-num">4.9★</div>
-      <div class="stat-text">
-        Average rating from local homeowners
-      </div>
-      <i class="bi bi-star"></i>
-    </div>
-  </aside>
 </section>
 
-<!-- GALLERY -->
+
+
+<!-- GALLERY (Masonry) -->
 <section id="gallery" class="gallery-section">
   <div class="container-xxl gallery-head text-center">
     <p class="eyebrow mb-2">• Gallery</p>
@@ -254,90 +301,610 @@
     </a>
   </div>
 
-  <div class="gallery-grid container-xxl">
-    <!-- 01 -->
-    <figure class="g-item span-4 ratio-4x3">
-      <img src="interior-house.jpg" alt="Dining room plaster skim with crisp corners">
-      <figcaption class="g-cap">
-        <span class="g-num">01</span>
-        <span class="g-title">Dining Room</span>
-      </figcaption>
-    </figure>
+  <!-- Masonry container -->
+  <div class="container-xxl">
+    <div class="masonry">
 
-    <!-- 02 (center wide) -->
-    <figure class="g-item span-6 ratio-16x9">
-      <img src="bedroom-project.jpg" alt="Bedroom ceiling skim and painted finish">
-      <figcaption class="g-cap">
-        <span class="g-num">02</span>
-        <span class="g-title">Bedroom</span>
-      </figcaption>
-    </figure>
+      <!-- 01 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="interior-house.jpg" alt="Dining room plaster skim with crisp corners" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">House Painting & Plastering</span>
+          </figcaption>
+        </figure>
+      </article>
 
-    <!-- 03 -->
-    <figure class="g-item span-4 ratio-4x3">
-      <img src="bedroom-project-2.jpg" alt="Feature wall rendered and colour matched">
-      <figcaption class="g-cap">
-        <span class="g-num">03</span>
-        <span class="g-title">Creative Workspace</span>
-      </figcaption>
-    </figure>
+      <!-- 02 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="bedroom-project.jpg" alt="Bedroom ceiling skim and painted finish" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">Bedroom Ceiling Skim & Painting</span>
+          </figcaption>
+        </figure>
+      </article>
 
-    <!-- 04 -->
-    <figure class="g-item span-4 ratio-4x3">
-      <img src="wall-plastering.jpg" alt="Kitchen plasterboard & bonding then skim coat">
-      <figcaption class="g-cap">
-        <span class="g-num">04</span>
-        <span class="g-title">Kitchen</span>
-      </figcaption>
-    </figure>
+      <!-- 03 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="bedroom-project-2.jpg" alt="Feature wall rendered and colour matched" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">Bedroom Wall Rendering</span>
+          </figcaption>
+        </figure>
+      </article>
 
-    <!-- 05 (wide) -->
-    <figure class="g-item span-8 ratio-16x9">
-      <img src="kitchen-project.jpg" alt="Living room re-skim with smooth finish">
-      <figcaption class="g-cap">
-        <span class="g-num">05</span>
-        <span class="g-title">Living Room</span>
-      </figcaption>
-    </figure>
+      <!-- 04 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="wall-plastering.jpg" alt="Kitchen plasterboard & bonding then skim coat" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">Kitchen wall plastering</span>
+          </figcaption>
+        </figure>
+      </article>
 
-    <!-- 06 -->
-    <figure class="g-item span-4 ratio-3x4">
-      <img src="bathroom-project.jpg" alt="Guest bedroom plaster & paint refresh">
-      <figcaption class="g-cap">
-        <span class="g-num">06</span>
-        <span class="g-title">Guest Bedroom</span>
-      </figcaption>
-    </figure>
+      <!-- 05 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="kitchen-project.jpg" alt="Living room re-skim with smooth finish" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">Kitchen re-skim</span>
+          </figcaption>
+        </figure>
+      </article>
 
-    <!-- 07 (taller) -->
-    <figure class="g-item span-4 ratio-3x4">
-      <img src="bathroom-project-2.jpg" alt="Decorative foyer skim and paint">
-      <figcaption class="g-cap">
-        <span class="g-num">07</span>
-        <span class="g-title">Decorative Foyer</span>
-      </figcaption>
-    </figure>
+      <!-- 06 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="bathroom-project.jpg" alt="Guest bedroom plaster & paint refresh" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">Bathroom plaster & paint</span>
+          </figcaption>
+        </figure>
+      </article>
 
-    <!-- 08 (wide) -->
-    <figure class="g-item span-8 ratio-3x2">
-      <img src="living-room-project.jpg" alt="Home office plastering and finishing">
-      <figcaption class="g-cap">
-        <span class="g-num">08</span>
-        <span class="g-title">Home Office</span>
-      </figcaption>
-    </figure>
+      <!-- 07 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="bathroom-project-2.jpg" alt="Decorative foyer skim and paint" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">Bathroom painting</span>
+          </figcaption>
+        </figure>
+      </article>
 
-    <!-- 09 -->
-    <figure class="g-item span-4 ratio-4x3">
-      <img src="living-room-project-2.jpg" alt="Bathroom tanking, tiling-ready finish">
-      <figcaption class="g-cap">
-        <span class="g-num">09</span>
-        <span class="g-title">Bathroom</span>
-      </figcaption>
-    </figure>
+      <!-- 08 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="living-room-project.jpg" alt="Home office plastering and finishing" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">Living room wall plastering</span>
+          </figcaption>
+        </figure>
+      </article>
+
+      <!-- 09 -->
+      <article class="m-item">
+        <figure class="m-card">
+          <img src="living-room-project-2.jpg" alt="Bathroom tanking, tiling-ready finish" loading="lazy">
+          <figcaption class="m-cap">
+            <span class="g-title">Living room painting</span>
+          </figcaption>
+        </figure>
+      </article>
+
+    </div>
   </div>
 </section>
 
+<!-- SIMPLE TESTIMONIALS / REVIEWS -->
+<section id="reviews" class="reviews-section">
+  <div class="container-thin">
+
+    <!-- Header -->
+    <div class="reviews-head text-center">
+      <div class="eyebrow mb-2">• Reviews</div>
+      <div class="reviews-score">5.0</div>
+      <p class="reviews-sub">We’re proud to deliver a service that clients consistently love.</p>
+
+      <!-- Metrics -->
+      <div class="reviews-metrics d-flex flex-wrap justify-content-center gap-4 mt-3">
+        <div class="metric">
+          <div class="metric-v">5.0</div>
+          <div class="metric-k">Cleanliness</div>
+        </div>
+        <div class="metric">
+          <div class="metric-v">5.0</div>
+          <div class="metric-k">Finish Quality</div>
+        </div>
+        <div class="metric">
+          <div class="metric-v">5.0</div>
+          <div class="metric-k">Reliability</div>
+        </div>
+        <div class="metric">
+          <div class="metric-v">5.0</div>
+          <div class="metric-k">Communication</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid (md and up) -->
+    <div class="reviews-grid d-none d-md-block mt-4">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Andrew K.</div>
+                <small class="text-muted">Bangor, Anglesey</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Immaculate plaster work and tidy finishes. The team turned around our living room skim in a day and left it paint-ready. Highly recommend.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Patrick T.</div>
+                <small class="text-muted">Caernarfon, Gwynedd</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Rising damp sorted and walls re-plastered perfectly. Diagnostics were clear and the after-care advice was spot on.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Inessa J.</div>
+                <small class="text-muted">Llandudno, Conwy</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Silicone render transformed the exterior and the colour match was perfect. Kerb appeal through the roof.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Lina S.</div>
+                <small class="text-muted">Menai Bridge</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Fast, dust-aware skimming of ceilings and tricky corners. Exactly the finish we needed before decorating.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Sofia W.</div>
+                <small class="text-muted">Holyhead, Anglesey</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Bedroom re-skim and patch repair after electrics, seamless. Communication was brilliant from quote to finish.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Michael B.</div>
+                <small class="text-muted">Chester & Liverpool</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Repointing and a small structural repair completed on time. Professional team, five stars without a doubt.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile carousel (sm only) -->
+    <div id="reviewsCarousel" class="carousel slide d-md-none mt-3" data-bs-ride="carousel" data-bs-touch="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <article class="r-card mx-3">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Andrew K.</div>
+                <small class="text-muted">Bangor, Anglesey</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">Immaculate plaster work and tidy finishes. Paint ready in a day.</p>
+          </article>
+        </div>
+
+        <div class="carousel-item">
+          <article class="r-card mx-3">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Patrick T.</div>
+                <small class="text-muted">Caernarfon, Gwynedd</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">Rising damp fixed and re-plastered perfectly. Clear after care.</p>
+          </article>
+        </div>
+
+        <div class="carousel-item">
+          <article class="r-card mx-3">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Inessa J.</div>
+                <small class="text-muted">Llandudno, Conwy</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">Silicone render looks amazing and colour matched perfectly.</p>
+          </article>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- COVERAGE / AREAS WE SERVE -->
+<section id="coverage" class="coverage-section">
+  <div class="container-thin text-center">
+    <h2 class="cov-title">
+      Serving Anglesey &amp; Gwynedd, 
+      <span class="cov-sub">Plastering, Rendering &amp; Damp Proofing</span>
+    </h2>
+
+    <p class="cov-lede">
+      Homes, landlords and small contractors across <strong>Anglesey</strong>, 
+      <strong>Gwynedd</strong> &amp; wider <strong>North Wales</strong> trust us for 
+      smooth plastering, durable renders and proven damp solutions. 
+      Tap your area below to <strong>get a fast quote</strong>.
+    </p>
+
+    <!-- Location pills (all link to contact/quote) -->
+    <nav aria-label="Service coverage locations" class="coverage-pills">
+      <!-- Anglesey -->
+      <a href="#quote" class="loc-pill" title="Holyhead — Get a quote">Holyhead</a>
+      <a href="#quote" class="loc-pill" title="Llangefni — Get a quote">Llangefni</a>
+      <a href="#quote" class="loc-pill" title="Menai Bridge — Get a quote">Menai Bridge</a>
+      <a href="#quote" class="loc-pill" title="Beaumaris — Get a quote">Beaumaris</a>
+      <a href="#quote" class="loc-pill" title="Amlwch — Get a quote">Amlwch</a>
+      <a href="#quote" class="loc-pill" title="Benllech — Get a quote">Benllech</a>
+      <a href="#quote" class="loc-pill" title="Valley &amp; Trearddur — Get a quote">Valley &amp; Trearddur</a>
+
+      <!-- Gwynedd & Conwy -->
+      <a href="#quote" class="loc-pill" title="Bangor — Get a quote">Bangor</a>
+      <a href="#quote" class="loc-pill" title="Caernarfon — Get a quote">Caernarfon</a>
+      <a href="#quote" class="loc-pill" title="Pwllheli — Get a quote">Pwllheli</a>
+      <a href="#quote" class="loc-pill" title="Porthmadog — Get a quote">Porthmadog</a>
+      <a href="#quote" class="loc-pill" title="Dolgellau — Get a quote">Dolgellau</a>
+      <a href="#quote" class="loc-pill" title="Bala — Get a quote">Bala</a>
+      <a href="#quote" class="loc-pill" title="Abersoch — Get a quote">Abersoch</a>
+      <a href="#quote" class="loc-pill" title="Llandudno — Get a quote">Llandudno</a>
+      <a href="#quote" class="loc-pill" title="Conwy — Get a quote">Conwy</a>
+      <a href="#quote" class="loc-pill" title="Colwyn Bay — Get a quote">Colwyn Bay</a>
+
+      
+    </nav>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-section">
+  <div class="container-xxl faq-wrap">
+
+    <!-- Head -->
+    <header class="faq-head text-center">
+      <p class="eyebrow mb-2">FAQ</p>
+      <h2 class="intro-title">Everything You Need to Know</h2>
+    </header>
+
+    <!-- Accordion list (masonry, 2 columns) -->
+    <div class="faq-grid">
+      <!-- item 1 -->
+      <details class="faq-item">
+        <summary>
+          What areas do you cover?
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <div class="faq-body">
+          <div>
+            We cover Anglesey, Gwynedd and North Wales — frequently working in
+            Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno, Conwy, Chester & Liverpool.
+          </div>
+        </div>
+      </details>
+
+      <!-- item 2 -->
+      <details class="faq-item">
+        <summary>
+          How soon can you visit for a quote?
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <div class="faq-body">
+          <div>
+            Most quotes can be arranged within a few days. We’ll confirm a time slot and
+            provide a written estimate with a breakdown of labour and materials.
+          </div>
+        </div>
+      </details>
+
+      <!-- item 3 -->
+      <details class="faq-item">
+        <summary>
+          Do you tidy and protect surfaces?
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <div class="faq-body">
+          <div>
+            Yes. We protect floors, furniture and adjoining surfaces, keep dust to a minimum,
+            and always leave the job clean and ready for next trades/painting.
+          </div>
+        </div>
+      </details>
+
+      <!-- item 4 -->
+      <details class="faq-item">
+        <summary>
+          What’s included in plastering (interior & exterior)?
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <div class="faq-body">
+          <div>
+            Boarding, bonding, patch & repair and final skim for paint-ready finishes.
+            Exterior rendering includes prep, mesh, base coats and the specified finish.
+          </div>
+        </div>
+      </details>
+
+      <!-- item 5 -->
+      <details class="faq-item">
+        <summary>
+          How do you price jobs?
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <div class="faq-body">
+          <div>
+            Transparent fixed quotes based on measured areas, substrate condition and access.
+            Materials, labour and waste removal are itemised so you know exactly what’s included.
+          </div>
+        </div>
+      </details>
+
+      <!-- item 6 -->
+      <details class="faq-item">
+        <summary>
+          Do you provide damp surveys & guarantees?
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <div class="faq-body">
+          <div>
+            We carry out moisture diagnostics, rising damp treatments, tanking and waterproofing.
+            Where applicable we supply manufacturer-backed guarantees and after-care guidance.
+          </div>
+        </div>
+      </details>
+
+      <!-- item 7 -->
+      <details class="faq-item">
+        <summary>
+          Can you colour-match or blend with existing finishes?
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <div class="faq-body">
+          <div>
+            Yes — for rendering we can match texture and colour for kerb-appeal and continuity,
+            and for interiors we blend skims to avoid visible transitions.
+          </div>
+        </div>
+      </details>
+
+      <!-- item 8 -->
+      <details class="faq-item">
+        <summary>
+          Are you insured and qualified?
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <div class="faq-body">
+          <div>
+            Fully insured, with 30+ years’ experience across plastering, rendering, and damp proofing.
+            References available on request.
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="final-cta" class="final-cta-section">
+  <div class="container-xxl">
+    <div class="final-cta-card">
+      <!-- Background image -->
+      <img src="cta-hero.jpg" alt="Freshly finished interior with crisp plasterwork" class="cta-bg">
+      <!-- Dark overlay -->
+      <div class="cta-overlay"></div>
+
+      <div class="cta-inner">
+        <!-- Left: copy -->
+        <div class="cta-copy">
+          <p class="eyebrow">• Ready to start?</p>
+          <h2 class="cta-title">
+            Book a free survey & get a fast, fixed quote
+          </h2>
+          <p class="cta-sub">
+            Interior & exterior plastering, rendering and damp proofing across
+            Anglesey, Gwynedd & North Wales. We’ll visit, advise on the best
+            method, and send a clear, itemised price.
+          </p>
+        </div>
+
+        <!-- Right: form -->
+        <form class="cta-form-panel" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Website quote request (Final CTA)" />
+          <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" />
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" required>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" required>
+            </div>
+
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" required>
+            </div>
+
+            <div class="field">
+              <label for="f-postcode">Postcode / Town</label>
+              <input id="f-postcode" name="postcode" type="text" required>
+            </div>
+
+            <div class="field span-2">
+              <label for="f-service">What service do you need?</label>
+              <select id="f-service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Plastering (Interior & Exterior)</option>
+                <option>Damp Proofing</option>
+                <option>Rendering (Sand & cement / Monocouche / Silicone)</option>
+                <option>General Building & Painting</option>
+              </select>
+            </div>
+
+          <button type="submit" class="btn-accent rounded-pill cta-submit">
+            Get My Fast Quote
+          </button>
+
+          <p class="cta-note">
+            We’ll reply quickly with available survey slots. No spam, no obligations.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container-xxl footer-grid">
+    <!-- Brand / About -->
+    <div class="footer-brand">
+      <a href="#" class="brand">
+        <span class="brand-icon-round">
+          <i class="bi bi-bricks"></i>
+        </span>
+        <span class="brand-text">Stuart Ward &amp; Sons</span>
+      </a>
+
+      <p class="footer-about">
+        Over 30 years of experience in plastering, rendering, damp proofing and
+        property maintenance. Based in Anglesey, serving Gwynedd &amp; North Wales,
+        including Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno, Conwy,
+        Chester &amp; Liverpool.
+      </p>
+
+      <ul class="footer-contact">
+        <li><i class="bi bi-envelope"></i> <a class="footer-link" href="mailto:stuartward1976@gmail.com">stuartward1976@gmail.com</a></li>
+        <li><i class="bi bi-telephone"></i> <a class="footer-link" href="tel:+447496647063">07496647063</a></li>
+      </ul>
+    </div>
+
+    <!-- Pages -->
+    <nav class="footer-col">
+      <h4 class="footer-title">Pages</h4>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="#">Home</a></li>
+        <li><a class="footer-link" href="#about">About</a></li>
+        <li><a class="footer-link" href="#services">Services</a></li>
+        <li><a class="footer-link" href="#gallery">Project Gallery</a></li>
+        <li><a class="footer-link" href="#quote">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Policies -->
+    <nav class="footer-col">
+      <h4 class="footer-title">Policies</h4>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="#cookies">Cookie Policy</a></li>
+        <li><a class="footer-link" href="#privacy">Privacy Policy</a></li>
+        <li><a class="footer-link" href="#terms">Terms of Service</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social -->
+    <div class="footer-col">
+      <h4 class="footer-title">Follow Us</h4>
+      <div class="footer-socials">
+        <a class="social-btn" href="#" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="social-btn" href="#" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="social-btn" href="#" aria-label="Google">
+          <i class="bi bi-google"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container-xxl footer-bottom-inner">
+      <div class="copy">
+        &copy; <span id="year"></span> Stuart Ward &amp; Sons. All rights reserved.
+      </div>
+      <div class="by">
+        Website Design by <a class="footer-link" href="https://cleandesignuk.com/" target="_blank" rel="noopener">Clean Design UK</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // tiny helper to keep the year current
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 
   <!-- Quote anchor target -->
@@ -368,6 +935,33 @@
       services.addEventListener('hidden.bs.collapse', ()=>accBtn.classList.remove('open'));
     }
   </script>
+
+<script>
+  (function () {
+    const container = document.querySelector('#faq');
+    if (!container) return;
+
+    const items = Array.from(container.querySelectorAll('.faq-item'));
+
+    items.forEach(item => {
+      const summary = item.querySelector('summary');
+      if (!summary) return;
+
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();                       // control toggle ourselves
+        const isOpen = item.hasAttribute('open');
+
+        // close all others
+        items.forEach(o => { if (o !== item) o.removeAttribute('open'); });
+
+        // toggle current
+        if (!isOpen) item.setAttribute('open', '');
+        else item.removeAttribute('open');
+      });
+    });
+  })();
+</script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
