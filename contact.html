@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Stuart Ward & Sons | Plastering, Rendering & Damp Proofing in Anglesey & Gwynedd</title>
+  <meta name="description" content="Contact Stuart Ward & Sons for expert plastering, rendering, damp proofing, and general building across Anglesey, Gwynedd, and North Wales. Phone, email, and a fast quote form." />
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+   <!-- Favicon & app icons -->
+<meta name="theme-color" content="#F1C40F">
+<meta name="msapplication-TileColor" content="#F1C40F">
+
+<link rel="icon" href="/favicon.ico" sizes="any">            <!-- fallback -->
+<link rel="icon" type="image/svg+xml" href="suart-ward-and-son-logo.jpg">   <!-- crisp on all sizes -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">   <!-- 180×180 -->
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F1C40F">
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- Global CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="contact.css" />
+
+  <!-- JSON-LD: LocalBusiness + ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.example.com/#business",
+        "name": "Stuart Ward & Sons",
+        "image": "https://www.example.com/assets/brand.jpg",
+        "url": "https://www.example.com/",
+        "telephone": "+44 1248 000000",
+        "email": "info@stuartwardsons.co.uk",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "High Street",
+          "addressLocality": "Beaumaris",
+          "addressRegion": "Anglesey",
+          "postalCode": "LL58",
+          "addressCountry": "GB"
+        },
+        "areaServed": [
+          "Anglesey",
+          "Gwynedd",
+          "North Wales",
+          "Bangor",
+          "Caernarfon",
+          "Holyhead",
+          "Menai Bridge",
+          "Llandudno",
+          "Conwy",
+          "Chester",
+          "Liverpool"
+        ],
+        "openingHoursSpecification": [{
+          "@type":"OpeningHoursSpecification",
+          "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens":"08:00",
+          "closes":"17:30"
+        }],
+        "sameAs": [
+          "https://www.facebook.com/yourpage",
+          "https://www.instagram.com/yourprofile",
+          "https://g.page/your-google-profile"
+        ],
+        "description": "Plastering, rendering, damp proofing, and general building across Anglesey, Gwynedd, and North Wales."
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://www.example.com/contact",
+        "name": "Contact Stuart Ward & Sons",
+        "mainEntityOfPage": "https://www.example.com/contact",
+        "about": { "@id": "https://www.example.com/#business" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Centered Navbar (pill) -->
+  <nav class="navbar navbar-light hero-nav rounded-pill">
+    <div class="container-fluid hero-nav-inner">
+
+      <!-- Brand -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-bricks brand-icon" aria-hidden="true"></i>
+        <span class="brand-text">Stuart Ward &amp; Sons</span>
+      </a>
+
+      <!-- Desktop links -->
+      <div class="d-none d-lg-flex align-items-center gap-2">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#about">About</a>
+
+        <div class="dropdown">
+          <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</button>
+          <ul class="dropdown-menu rounded-4 shadow">
+            <li><a class="dropdown-item" href="#services">All Services</a></li>
+            <li><a class="dropdown-item" href="#plastering">Plastering</a></li>
+            <li><a class="dropdown-item" href="#damp">Damp Proofing</a></li>
+            <li><a class="dropdown-item" href="#rendering">Rendering</a></li>
+            <li><a class="dropdown-item" href="#general">General Building &amp; Painting</a></li>
+          </ul>
+        </div>
+
+        <a class="btn btn-accent rounded-pill ms-1" href="#quote">Get a Free Quote</a>
+      </div>
+
+      <!-- Mobile toggler -->
+      <button class="navbar-toggler d-lg-none ms-auto" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Mobile / Medium Menu -->
+  <div class="offcanvas offcanvas-top mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header align-items-center">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-bricks brand-icon fs-5"></i>
+        <span id="mobileMenuLabel" class="brand-text">Stuart Ward &amp; Sons</span>
+      </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="mobile-nav list-unstyled">
+        <li><a href="#" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+
+        <!-- Services accordion for mobile -->
+        <li class="mt-1">
+          <button class="mobile-accordion" data-bs-toggle="collapse" data-bs-target="#mobileServices" aria-expanded="false" aria-controls="mobileServices">
+            Services <i class="bi bi-chevron-down ms-1"></i>
+          </button>
+          <div class="collapse" id="mobileServices">
+            <ul class="list-unstyled ps-3 mt-2">
+              <li><a href="#services" class="mobile-sub">All Services</a></li>
+              <li><a href="#plastering" class="mobile-sub">Plastering</a></li>
+              <li><a href="#damp" class="mobile-sub">Damp Proofing</a></li>
+              <li><a href="#rendering" class="mobile-sub">Rendering</a></li>
+              <li><a href="#general" class="mobile-sub">General Building &amp; Painting</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="mt-3">
+          <a href="#quote" class="btn btn-accent w-100 rounded-pill mobile-cta">Get a Free Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /Offcanvas -->
+
+
+  <!-- HERO -->
+  <section class="contact-hero">
+    <p class="contact-eyebrow">• Get in touch</p>
+    <h1 class="contact-title">Contact Stuart Ward &amp; Sons</h1>
+    <p class="contact-sub">
+      Reach our local team for plastering, rendering, damp proofing, and general building across
+      Anglesey, Gwynedd, and wider North Wales. Call, email, or use the quick form for a fast quote.
+    </p>
+    
+  </section>
+
+<!-- FORM + DETAILS SECTION WITH GRADIENT BACKGROUND -->
+<section class="contact-section">
+  <!-- CONTACT FORM CARD -->
+  <section class="contact-card" id="contact">
+    <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+  <input type="hidden" name="subject" value="New enquiry from Contact page" />
+  <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" />
+
+  <div class="form-grid" id="contactFormGrid">
+    <div>
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div>
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+    </div>
+
+    <div>
+      <label for="postcode">Postcode</label>
+      <input id="postcode" name="postcode" type="text" placeholder="e.g. LL57 1AA" required>
+    </div>
+
+<!-- SERVICES + MESSAGE ROW -->
+<div class="services-row full">
+  <!-- give this the id the JS expects -->
+  <div id="servicesPicker" class="multi-wrap">
+    <label for="servicesInput">What service do you need? <span class="muted">(choose one or more)</span></label>
+    <div class="tagbox" role="combobox" aria-expanded="false" aria-haspopup="listbox">
+      <div class="tags" id="servicesTags" aria-live="polite"></div>
+      <input id="servicesInput" type="text" placeholder="Select services…" autocomplete="off" aria-controls="servicesList">
+    </div>
+
+    <ul class="multi-list" id="servicesList" role="listbox" aria-label="Available services">
+      <li data-value="Plastering & Skimming">Plastering &amp; Skimming</li>
+      <li data-value="Rendering">Rendering</li>
+      <li data-value="Damp Proofing">Damp Proofing</li>
+      <li data-value="Plasterboard & Bonding">Plasterboard &amp; Bonding</li>
+      <li data-value="Ceilings & Walls">Ceilings &amp; Walls</li>
+      <li data-value="Monocouche & Silicone Render">Monocouche &amp; Silicone Render</li>
+      <li data-value="Painting & Finishing">Painting &amp; Finishing</li>
+      <li data-value="General Building">General Building</li>
+      <li data-value="Other">Other</li>
+    </ul>
+
+    <input type="hidden" name="services" id="servicesHidden">
+  </div>
+
+
+  <!-- button on next line -->
+  <div class="form-actions">
+    <button type="submit" class="btn btn-accent contact-submit">Send Message</button>
+  </div>
+</div>
+
+
+</form>
+  </section>
+  <!-- CONTACT DETAILS (2 CARDS) -->
+<section class="contact-details">
+  <div class="c-tile">
+    <h3><i class="bi bi-telephone-outbound"></i> Call us</h3>
+    <p><a href="tel:+441248000000">+44 1248 000000</a></p>
+    <p>Mon to Fri, 8:00 to 17:30</p>
+  </div>
+
+  <div class="c-tile">
+    <h3><i class="bi bi-envelope-paper"></i> Email</h3>
+    <p><a href="mailto:info@stuartwardsons.co.uk">info@stuartwardsons.co.uk</a></p>
+    <p>We aim to reply on the same day.</p>
+  </div>
+</section>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container-xxl footer-grid">
+    <!-- Brand / About -->
+    <div class="footer-brand">
+      <a href="#" class="brand">
+        <span class="brand-icon-round">
+          <i class="bi bi-bricks"></i>
+        </span>
+        <span class="brand-text">Stuart Ward &amp; Sons</span>
+      </a>
+
+      <p class="footer-about">
+        Over 30 years of experience in plastering, rendering, damp proofing and
+        property maintenance. Based in Anglesey, serving Gwynedd &amp; North Wales,
+        including Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno, Conwy,
+        Chester &amp; Liverpool.
+      </p>
+
+      <ul class="footer-contact">
+        <li><i class="bi bi-envelope-paper"></i> <a class="footer-link" href="mailto:stuartward1976@gmail.com">stuartward1976@gmail.com</a></li>
+        <li><i class="bi bi-telephone"></i> <a class="footer-link" href="tel:+447496647063">07496647063</a></li>
+      </ul>
+    </div>
+
+    <!-- Pages -->
+    <nav class="footer-col">
+      <h4 class="footer-title">Pages</h4>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="#">Home</a></li>
+        <li><a class="footer-link" href="#about">About</a></li>
+        <li><a class="footer-link" href="#services">Services</a></li>
+        <li><a class="footer-link" href="#gallery">Project Gallery</a></li>
+        <li><a class="footer-link" href="#quote">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Policies -->
+    <nav class="footer-col">
+      <h4 class="footer-title">Policies</h4>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="#cookies">Cookie Policy</a></li>
+        <li><a class="footer-link" href="#privacy">Privacy Policy</a></li>
+        <li><a class="footer-link" href="#terms">Terms of Service</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social -->
+    <div class="footer-col">
+      <h4 class="footer-title">Follow Us</h4>
+      <div class="footer-socials">
+        <a class="social-btn" href="#" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="social-btn" href="#" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="social-btn" href="#" aria-label="Google">
+          <i class="bi bi-google"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container-xxl footer-bottom-inner">
+      <div class="copy">
+        &copy; <span id="year"></span> Stuart Ward &amp; Sons. All rights reserved.
+      </div>
+      <div class="by">
+        Website Design by <a class="footer-link" href="https://cleandesignuk.com/" target="_blank" rel="noopener">Clean Design UK</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+/* ===== Multi-select with tags logic (fixed) ===== */
+(function(){
+  const wrap = document.getElementById('servicesPicker');
+  if (!wrap) return;
+
+  const input    = document.getElementById('servicesInput');
+  const list     = document.getElementById('servicesList');
+  const tagsWrap = document.getElementById('servicesTags');
+  const hidden   = document.getElementById('servicesHidden');
+  const options  = Array.from(list.querySelectorAll('li')).map(li => li.getAttribute('data-value'));
+  let selected   = [];
+
+  function updateHidden(){ hidden.value = selected.join(', '); }
+  function openList(){ list.classList.add('show'); wrap.querySelector('.tagbox').setAttribute('aria-expanded','true'); }
+  function closeList(){ list.classList.remove('show'); wrap.querySelector('.tagbox').setAttribute('aria-expanded','false'); }
+  function renderTags(){
+    tagsWrap.innerHTML = '';
+    selected.forEach(val => {
+      const tag = document.createElement('span');
+      tag.className = 'tag';
+      tag.innerHTML = `<span>${val}</span><button type="button" aria-label="Remove ${val}">×</button>`;
+      tag.querySelector('button').addEventListener('click', () => {
+        selected = selected.filter(v => v !== val);
+        renderTags(); updateHidden(); input.focus();
+      });
+      tagsWrap.appendChild(tag);
+    });
+  }
+  function addValue(val){
+    if (!val || selected.includes(val)) return;
+    selected.push(val); renderTags(); updateHidden();
+  }
+  function filterList(term){
+    const q = (term||'').trim().toLowerCase();
+    list.querySelectorAll('li').forEach(li => {
+      li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+  }
+
+  list.addEventListener('click', (e) => {
+    const li = e.target.closest('li'); if (!li) return;
+    addValue(li.getAttribute('data-value')); input.value=''; filterList(''); input.focus();
+  });
+
+  input.addEventListener('input', () => { if (!list.classList.contains('show')) openList(); filterList(input.value); });
+
+  wrap.addEventListener('focusin', openList);
+  document.addEventListener('click', (e) => { if (!wrap.contains(e.target)) closeList(); });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Backspace' && !input.value && selected.length){ selected.pop(); renderTags(); updateHidden(); }
+    if (e.key === 'Escape'){ closeList(); input.blur(); }
+  });
+
+  // Require at least one service on submit
+  const form = wrap.closest('form');
+  form.addEventListener('submit', (e) => {
+    if (!hidden.value.trim()){
+      e.preventDefault();
+      alert('Please choose at least one service.');
+      input.focus();
+    }
+  });
+})();
+</script>
+
+
+
+<script>
+  // tiny helper to keep the year current
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+  <!-- Quote anchor target -->
+  <section id="quote"></section>
+  
+  <!-- Anchors -->
+  <section id="quote"></section>
+  <section id="about"></section>
+  <section id="services"></section>
+  <section id="plastering"></section>
+  <section id="damp"></section>
+  <section id="rendering"></section>
+  <section id="general"></section>
+
+    <script>
+    // Close offcanvas when a mobile link is clicked
+    document.querySelectorAll('#mobileMenu a[href^="#"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        const oc = bootstrap.Offcanvas.getInstance(document.getElementById('mobileMenu'));
+        if (oc) oc.hide();
+      });
+    });
+    // Rotate chevron on accordion toggle
+    const accBtn = document.querySelector('.mobile-accordion');
+    const services = document.getElementById('mobileServices');
+    if (accBtn && services){
+      services.addEventListener('shown.bs.collapse', ()=>accBtn.classList.add('open'));
+      services.addEventListener('hidden.bs.collapse', ()=>accBtn.classList.remove('open'));
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

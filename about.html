@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>About | Stuart Ward & Sons — Plastering, Rendering & Damp Proofing in Anglesey & Gwynedd</title>
+  <meta name="description" content="About Stuart Ward & Sons. 30+ years providing plastering, rendering & damp proofing across Anglesey, Gwynedd & North Wales. Local specialists for smooth plaster finishes, exterior rendering and proven damp treatments." />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap (icons + offcanvas for your existing navbar) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+   <!-- Favicon & app icons -->
+<meta name="theme-color" content="#F1C40F">
+<meta name="msapplication-TileColor" content="#F1C40F">
+
+<link rel="icon" href="/favicon.ico" sizes="any">            <!-- fallback -->
+<link rel="icon" type="image/svg+xml" href="suart-ward-and-son-logo.jpg">   <!-- crisp on all sizes -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">   <!-- 180×180 -->
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F1C40F">
+
+
+  <!-- Global styles (your existing file) -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page-only styles -->
+  <link rel="stylesheet" href="about.css" />
+
+
+  <!-- Local Business Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Stuart Ward & Sons",
+    "url": "https://www.yourdomain.co.uk/about.html",
+    "image": "https://www.yourdomain.co.uk/about-hero.jpg",
+    "telephone": "+44 1234 567890",
+    "email": "hello@yourdomain.co.uk",
+    "priceRange": "££",
+    "description": "Local plastering, rendering and damp proofing specialists serving Anglesey, Gwynedd & North Wales for 30+ years. Smooth plaster finishes, durable exterior rendering, and proven damp treatments for homeowners, landlords, and contractors.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Example Road",
+      "addressLocality": "Beaumaris",
+      "addressRegion": "Anglesey",
+      "postalCode": "LL58",
+      "addressCountry": "GB"
+    },
+    "areaServed": [
+      {"@type":"Place","name":"Anglesey"},
+      {"@type":"Place","name":"Gwynedd"},
+      {"@type":"Place","name":"Bangor"},
+      {"@type":"Place","name":"Caernarfon"},
+      {"@type":"Place","name":"Holyhead"},
+      {"@type":"Place","name":"Menai Bridge"},
+      {"@type":"Place","name":"Llandudno"},
+      {"@type":"Place","name":"Conwy"},
+      {"@type":"Place","name":"Chester"},
+      {"@type":"Place","name":"Liverpool"}
+    ],
+    "sameAs": [
+      "https://facebook.com/yourpage",
+      "https://maps.google.com/?cid=YOUR-GMB-ID"
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday","Tuesday","Wednesday","Thursday","Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:30"
+    }]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Centered Navbar (pill) -->
+<nav class="navbar navbar-light hero-nav rounded-pill">
+  <div class="container-fluid hero-nav-inner">
+
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <i class="bi bi-bricks brand-icon" aria-hidden="true"></i>
+      <span class="brand-text">Stuart Ward &amp; Sons</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#about">About</a>
+
+      <div class="dropdown">
+        <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</button>
+        <ul class="dropdown-menu rounded-4 shadow">
+          <li><a class="dropdown-item" href="#services">All Services</a></li>
+          <li><a class="dropdown-item" href="#plastering">Plastering</a></li>
+          <li><a class="dropdown-item" href="#damp">Damp Proofing</a></li>
+          <li><a class="dropdown-item" href="#rendering">Rendering</a></li>
+          <li><a class="dropdown-item" href="#general">General Building &amp; Painting</a></li>
+        </ul>
+      </div>
+
+      <a class="btn btn-accent rounded-pill ms-1" href="#quote">Get a Free Quote</a>
+    </div>
+
+    <!-- Mobile toggler -->
+    <button class="navbar-toggler d-lg-none ms-auto" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu" aria-label="Open menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Offcanvas Mobile / Medium Menu -->
+<div class="offcanvas offcanvas-top mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header align-items-center">
+    <div class="d-flex align-items-center gap-2">
+      <i class="bi bi-bricks brand-icon fs-5"></i>
+      <span id="mobileMenuLabel" class="brand-text">Stuart Ward &amp; Sons</span>
+    </div>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="mobile-nav list-unstyled">
+      <li><a href="#" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+
+      <li class="mt-1">
+        <button class="mobile-accordion" data-bs-toggle="collapse" data-bs-target="#mobileServices" aria-expanded="false" aria-controls="mobileServices">
+          Services <i class="bi bi-chevron-down ms-1"></i>
+        </button>
+        <div class="collapse" id="mobileServices">
+          <ul class="list-unstyled ps-3 mt-2">
+            <li><a href="#services" class="mobile-sub">All Services</a></li>
+            <li><a href="#plastering" class="mobile-sub">Plastering</a></li>
+            <li><a href="#damp" class="mobile-sub">Damp Proofing</a></li>
+            <li><a href="#rendering" class="mobile-sub">Rendering</a></li>
+            <li><a href="#general" class="mobile-sub">General Building &amp; Painting</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mt-3">
+        <a href="#quote" class="btn btn-accent w-100 rounded-pill mobile-cta">Get a Free Quote</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <!-- ===== HERO (About) ===== -->
+  <header class="about-hero" role="banner" aria-label="About Stuart Ward & Sons">
+    <img src="cta-hero-2.jpg" alt="Local plastering and rendering in Anglesey & Gwynedd" class="about-hero__img">
+    <div class="about-hero__overlay"></div>
+
+    <div class="about-hero__content container-xxl">
+      <p class="eyebrow">• About Stuart Ward &amp; Sons</p>
+      <h1 class="about-hero__title">
+        Trusted Plastering, Rendering &amp; Damp Proofing
+      </h1>
+      
+  <p class="hero-locale">
+    Across Anglesey, Gwynedd & North Wales
+  </p>
+      <p class="about-hero__lead">
+        For 30+ years we’ve delivered <strong>glass-flat plaster finishes</strong>, durable <strong>exterior rendering</strong>, and proven <strong>damp treatments</strong> for local homeowners, landlords and small contractors.
+      </p>
+      <div class="about-hero__cta">
+        <a href="index.html#quote" class="btn btn-accent rounded-pill px-4 py-2 fw-bold">Get a Fast Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MISSION / VISION ===== -->
+  <section class="mv-wrap" aria-labelledby="mv-title">
+    <div class="mv-glow mv-glow--left" aria-hidden="true"></div>
+    <div class="mv-glow mv-glow--right" aria-hidden="true"></div>
+
+    <div class="container-xxl">
+      <div class="mv-grid">
+
+        <!-- Mission -->
+        <div class="mv-text">
+          <h2 id="mv-title" class="mv-eyebrow">OUR MISSION</h2>
+          <p class="mv-lead">
+            We’re dedicated local partners on your property journey. Our mission is to make <strong>plastering</strong>, <strong>rendering</strong> and <strong>damp proofing</strong> straightforward, accountable and rewarding for everyone involved, from first-time buyers to seasoned landlords.
+          </p>
+          <p class="mv-p">
+            Every wall we skim, every ceiling we straighten and every damp issue we remedy is approached with the same standard: clean lines, crisp corners and finishes that are truly ready for paint.
+          </p>
+          <p class="mv-p">
+            We work with clear communication, dust-aware workflows and tidy sites, so your home in Anglesey, Gwynedd or wider North Wales looks great and feels great at handover.
+          </p>
+        </div>
+
+        <figure class="mv-img mv-img--right">
+          <img src="about-3.jpg" alt="Crisp exterior rendering work in North Wales" />
+        </figure>
+
+        <!-- Photo left -->
+        <figure class="mv-img mv-img--left">
+          <img src="about-4.jpg" alt="Smooth interior plaster finish with sharp edges" />
+        </figure>
+
+        <!-- Vision -->
+        <div class="mv-text">
+          <h2 class="mv-eyebrow">OUR VISION</h2>
+          <p class="mv-lead">
+            To be the <strong>go-to plastering &amp; rendering team in Anglesey &amp; Gwynedd</strong>, known for craftsmanship, reliability and genuine care for local homes.
+          </p>
+          <p class="mv-p">
+            We’re focused on long-lasting finishes, honest advice and innovation where it matters, from materials to methods, so your walls and exteriors continue to look sharp and perform well for years.
+          </p>
+          <p class="mv-p">
+            Whether it’s a damp survey in Bangor, a full re-skim in Menai Bridge or monocouche render in Llandudno, we’ll make it seamless, tidy and on schedule.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- SIMPLE TESTIMONIALS / REVIEWS -->
+<section id="reviews" class="reviews-section">
+  <div class="container-thin">
+
+    <!-- Header -->
+    <div class="reviews-head text-center">
+      <div class="eyebrow mb-2">• Reviews</div>
+      <div class="reviews-score">5.0</div>
+      <p class="reviews-sub">We’re proud to deliver a service that clients consistently love.</p>
+
+      <!-- Metrics -->
+      <div class="reviews-metrics d-flex flex-wrap justify-content-center gap-4 mt-3">
+        <div class="metric">
+          <div class="metric-v">5.0</div>
+          <div class="metric-k">Cleanliness</div>
+        </div>
+        <div class="metric">
+          <div class="metric-v">5.0</div>
+          <div class="metric-k">Finish Quality</div>
+        </div>
+        <div class="metric">
+          <div class="metric-v">5.0</div>
+          <div class="metric-k">Reliability</div>
+        </div>
+        <div class="metric">
+          <div class="metric-v">5.0</div>
+          <div class="metric-k">Communication</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid (md and up) -->
+    <div class="reviews-grid d-none d-md-block mt-4">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Andrew K.</div>
+                <small class="text-muted">Bangor, Anglesey</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Immaculate plaster work and tidy finishes. The team turned around our living room skim in a day and left it paint-ready. Highly recommend.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Patrick T.</div>
+                <small class="text-muted">Caernarfon, Gwynedd</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Rising damp sorted and walls re-plastered perfectly. Diagnostics were clear and the after-care advice was spot on.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Inessa J.</div>
+                <small class="text-muted">Llandudno, Conwy</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Silicone render transformed the exterior and the colour match was perfect. Kerb appeal through the roof.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Lina S.</div>
+                <small class="text-muted">Menai Bridge</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Fast, dust-aware skimming of ceilings and tricky corners. Exactly the finish we needed before decorating.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Sofia W.</div>
+                <small class="text-muted">Holyhead, Anglesey</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Bedroom re-skim and patch repair after electrics, seamless. Communication was brilliant from quote to finish.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="r-card">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Michael B.</div>
+                <small class="text-muted">Chester & Liverpool</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">
+              Repointing and a small structural repair completed on time. Professional team, five stars without a doubt.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile carousel (sm only) -->
+    <div id="reviewsCarousel" class="carousel slide d-md-none mt-3" data-bs-ride="carousel" data-bs-touch="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <article class="r-card mx-3">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Andrew K.</div>
+                <small class="text-muted">Bangor, Anglesey</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">Immaculate plaster work and tidy finishes. Paint ready in a day.</p>
+          </article>
+        </div>
+
+        <div class="carousel-item">
+          <article class="r-card mx-3">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Patrick T.</div>
+                <small class="text-muted">Caernarfon, Gwynedd</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">Rising damp fixed and re-plastered perfectly. Clear after care.</p>
+          </article>
+        </div>
+
+        <div class="carousel-item">
+          <article class="r-card mx-3">
+            <header class="r-top">
+              <div>
+                <div class="r-name">Inessa J.</div>
+                <small class="text-muted">Llandudno, Conwy</small>
+              </div>
+              <div class="ms-auto r-rate">5.0<i class="bi bi-star-fill ms-1"></i></div>
+            </header>
+            <p class="r-body">Silicone render looks amazing and colour matched perfectly.</p>
+          </article>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- FINAL CTA -->
+<section id="final-cta" class="final-cta-section">
+  <div class="container-xxl">
+    <div class="final-cta-card">
+      <!-- Background image -->
+      <img src="cta-hero.jpg" alt="Freshly finished interior with crisp plasterwork" class="cta-bg">
+      <!-- Dark overlay -->
+      <div class="cta-overlay"></div>
+
+      <div class="cta-inner">
+        <!-- Left: copy -->
+        <div class="cta-copy">
+          <p class="eyebrow">• Ready to start?</p>
+          <h2 class="cta-title">
+            Book a free survey & get a fast, fixed quote
+          </h2>
+          <p class="cta-sub">
+            Interior & exterior plastering, rendering and damp proofing across
+            Anglesey, Gwynedd & North Wales. We’ll visit, advise on the best
+            method, and send a clear, itemised price.
+          </p>
+        </div>
+
+        <!-- Right: form -->
+        <form class="cta-form-panel" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Website quote request (Final CTA)" />
+          <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" />
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" required>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" required>
+            </div>
+
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" required>
+            </div>
+
+            <div class="field">
+              <label for="f-postcode">Postcode / Town</label>
+              <input id="f-postcode" name="postcode" type="text" required>
+            </div>
+
+            <div class="field span-2">
+              <label for="f-service">What service do you need?</label>
+              <select id="f-service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Plastering (Interior & Exterior)</option>
+                <option>Damp Proofing</option>
+                <option>Rendering (Sand & cement / Monocouche / Silicone)</option>
+                <option>General Building & Painting</option>
+              </select>
+            </div>
+
+          <button type="submit" class="btn-accent rounded-pill cta-submit">
+            Get My Fast Quote
+          </button>
+
+          <p class="cta-note">
+            We’ll reply quickly with available survey slots. No spam, no obligations.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container-xxl footer-grid">
+    <!-- Brand / About -->
+    <div class="footer-brand">
+      <a href="#" class="brand">
+        <span class="brand-icon-round">
+          <i class="bi bi-bricks"></i>
+        </span>
+        <span class="brand-text">Stuart Ward &amp; Sons</span>
+      </a>
+
+      <p class="footer-about">
+        Over 30 years of experience in plastering, rendering, damp proofing and
+        property maintenance. Based in Anglesey, serving Gwynedd &amp; North Wales,
+        including Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno, Conwy,
+        Chester &amp; Liverpool.
+      </p>
+
+      <ul class="footer-contact">
+        <li><i class="bi bi-envelope-paper"></i> <a class="footer-link" href="mailto:stuartward1976@gmail.com">stuartward1976@gmail.com</a></li>
+        <li><i class="bi bi-telephone"></i> <a class="footer-link" href="tel:+447496647063">07496647063</a></li>
+      </ul>
+    </div>
+
+    <!-- Pages -->
+    <nav class="footer-col">
+      <h4 class="footer-title">Pages</h4>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="#">Home</a></li>
+        <li><a class="footer-link" href="#about">About</a></li>
+        <li><a class="footer-link" href="#services">Services</a></li>
+        <li><a class="footer-link" href="#gallery">Project Gallery</a></li>
+        <li><a class="footer-link" href="#quote">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Policies -->
+    <nav class="footer-col">
+      <h4 class="footer-title">Policies</h4>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="#cookies">Cookie Policy</a></li>
+        <li><a class="footer-link" href="#privacy">Privacy Policy</a></li>
+        <li><a class="footer-link" href="#terms">Terms of Service</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social -->
+    <div class="footer-col">
+      <h4 class="footer-title">Follow Us</h4>
+      <div class="footer-socials">
+        <a class="social-btn" href="#" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="social-btn" href="#" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="social-btn" href="#" aria-label="Google">
+          <i class="bi bi-google"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container-xxl footer-bottom-inner">
+      <div class="copy">
+        &copy; <span id="year"></span> Stuart Ward &amp; Sons. All rights reserved.
+      </div>
+      <div class="by">
+        Website Design by <a class="footer-link" href="https://cleandesignuk.com/" target="_blank" rel="noopener">Clean Design UK</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Close offcanvas when a mobile link is clicked
+  document.querySelectorAll('#mobileMenu a[href^="#"]').forEach(function(el){
+    el.addEventListener('click', function(){
+      const oc = bootstrap.Offcanvas.getInstance(document.getElementById('mobileMenu'));
+      if (oc) oc.hide();
+    });
+  });
+  // Rotate chevron on accordion toggle
+  const accBtn = document.querySelector('.mobile-accordion');
+  const services = document.getElementById('mobileServices');
+  if (accBtn && services){
+    services.addEventListener('shown.bs.collapse', ()=>accBtn.classList.add('open'));
+    services.addEventListener('hidden.bs.collapse', ()=>accBtn.classList.remove('open'));
+  }
+</script>
+
+<script>
+  // tiny helper to keep the year current
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+  <!-- Quote anchor target -->
+  <section id="quote"></section>
+  
+  <!-- Anchors -->
+  <section id="quote"></section>
+  <section id="about"></section>
+  <section id="services"></section>
+  <section id="plastering"></section>
+  <section id="damp"></section>
+  <section id="rendering"></section>
+  <section id="general"></section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
