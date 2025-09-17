@@ -29,6 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <!-- Global CSS -->
+  <link rel="stylesheet" href="cookie.css" />
   <link rel="stylesheet" href="style.css" />
   <!-- Page CSS -->
   <link rel="stylesheet" href="contact.css" />
@@ -44,8 +45,8 @@
         "name": "Stuart Ward & Sons",
         "image": "https://www.example.com/assets/brand.jpg",
         "url": "https://www.example.com/",
-        "telephone": "+44 1248 000000",
-        "email": "info@stuartwardsons.co.uk",
+        "telephone": "07496647063",
+        "email": "stuartward1976@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "High Street",
@@ -93,6 +94,37 @@
 </head>
 <body>
 
+  <!-- ======================================================
+     COOKIE CONSENT BANNER
+     ====================================================== -->
+<div id="cookie-banner"
+     class="cookie-banner visually-hidden"
+     role="dialog"
+     aria-live="polite"
+     aria-label="Cookie consent banner">
+
+  <p class="cookie-text mb-2">
+    🍪 We use cookies to improve your browsing experience, deliver
+    personalised content, and analyse our traffic. By clicking
+    “Accept All”, you consent to our use of cookies.
+    See our <a href="cookie-policy.html" class="cookie-link">Cookie&nbsp;Policy</a>
+    for details.
+  </p>
+
+  <div class="cookie-actions d-flex gap-2">
+    <button id="cookie-accept"
+            class="btn btn-primary btn-sm flex-grow-1">
+      Accept&nbsp;All 🍪
+    </button>
+
+    <button id="cookie-decline"
+            class="btn btn-outline-secondary btn-sm flex-grow-1">
+      Decline
+    </button>
+  </div>
+</div>
+<!-- /COOKIE BANNER -->
+
   <!-- Centered Navbar (pill) -->
   <nav class="navbar navbar-light hero-nav rounded-pill">
     <div class="container-fluid hero-nav-inner">
@@ -113,9 +145,9 @@
           <ul class="dropdown-menu rounded-4 shadow">
             <li><a class="dropdown-item" href="services.html">All Services</a></li>
             <li><a class="dropdown-item" href="plastering.html">Plastering</a></li>
-            <li><a class="dropdown-item" href="damp-roofing.html">Damp Proofing</a></li>
-            <li><a class="dropdown-item" href="rendering.html">Rendering</a></li>
-            <li><a class="dropdown-item" href="general-building.html">General Building &amp; Painting</a></li>
+            <li><a class="dropdown-item" href="damp-proofing-anglesey-gwynedd.html">Damp Proofing</a></li>
+            <li><a class="dropdown-item" href="rendering-anglesey-gwynedd.html">Rendering</a></li>
+            <li><a class="dropdown-item" href="general-building-and-painting-anglesey-gwynedd.html">General Building &amp; Painting</a></li>
           </ul>
         </div>
 
@@ -155,9 +187,9 @@
             <ul class="list-unstyled ps-3 mt-2">
               <li><a href="services.html" class="mobile-sub">All Services</a></li>
               <li><a href="plastering.html" class="mobile-sub">Plastering</a></li>
-              <li><a href="damp-roofing.html" class="mobile-sub">Damp Proofing</a></li>
-              <li><a href="rendering.html" class="mobile-sub">Rendering</a></li>
-              <li><a href="general-building.html" class="mobile-sub">General Building &amp; Painting</a></li>
+              <li><a href="damp-proofing-anglesey-gwynedd.html" class="mobile-sub">Damp Proofing</a></li>
+              <li><a href="rendering-anglesey-gwynedd.html" class="mobile-sub">Rendering</a></li>
+              <li><a href="general-building-and-painting-anglesey-gwynedd.html" class="mobile-sub">General Building &amp; Painting</a></li>
             </ul>
           </div>
         </li>
@@ -187,8 +219,8 @@
 <section class="contact-section">
   <!-- CONTACT FORM CARD -->
   <section class="contact-card" id="contact">
-    <form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="ae44b6d0-9991-4f69-974e-802f107a5cf3" />
   <input type="hidden" name="subject" value="New enquiry from Contact page" />
   <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" />
 
@@ -209,8 +241,8 @@
     </div>
 
     <div>
-      <label for="postcode">Postcode</label>
-      <input id="postcode" name="postcode" type="text" placeholder="e.g. LL57 1AA" required>
+      <label for="postcode">Area/Town</label>
+      <input id="postcode" name="postcode" type="text" placeholder="e.g. Anglesey" required>
     </div>
 
 <!-- SERVICES + MESSAGE ROW -->
@@ -252,13 +284,13 @@
 <section class="contact-details">
   <div class="c-tile">
     <h3><i class="bi bi-telephone-outbound"></i> Call us</h3>
-    <p><a href="tel:+441248000000">+44 1248 000000</a></p>
+    <p><a href="tel:+447496647063">07496647063</a></p>
     <p>Mon to Fri, 8:00 to 17:30</p>
   </div>
 
   <div class="c-tile">
     <h3><i class="bi bi-envelope-paper"></i> Email</h3>
-    <p><a href="mailto:info@stuartwardsons.co.uk">info@stuartwardsons.co.uk</a></p>
+    <p><a href="mailto:stuartward1976@gmail.com">stuartward1976@gmail.com</a></p>
     <p>We aim to reply on the same day.</p>
   </div>
 </section>
@@ -305,9 +337,9 @@
     <nav class="footer-col">
       <h4 class="footer-title">Policies</h4>
       <ul class="footer-list">
-        <li><a class="footer-link" href="#cookies">Cookie Policy</a></li>
-        <li><a class="footer-link" href="#privacy">Privacy Policy</a></li>
-        <li><a class="footer-link" href="#terms">Terms of Service</a></li>
+        <li><a class="footer-link" href="cookie-policy.html">Cookie Policy</a></li>
+        <li><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a class="footer-link" href="terms-and-conditions.html">Terms of Service</a></li>
       </ul>
     </nav>
 
@@ -408,6 +440,84 @@
 })();
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+(function () {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const servicesHidden = document.getElementById('servicesHidden');
+
+  async function postForm() {
+    const formData = new FormData(form);
+
+    // Basic guard: require at least one selected service
+    if (servicesHidden && !servicesHidden.value.trim()) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Select a service',
+        text: 'Please choose at least one service before sending.',
+        confirmButtonText: 'OK'
+      });
+      return;
+    }
+
+    try {
+      submitBtn.disabled = true;
+      const originalLabel = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok && (data.success === true || data.message)) {
+        // Success modal
+        Swal.fire({
+          icon: 'success',
+          title: 'Thank you!',
+          text: 'Our team will get in touch with you soon.',
+          confirmButtonText: 'OK'
+        });
+        form.reset();
+
+        // If you use your tag selector, also clear its UI:
+        try {
+          document.getElementById('servicesTags')?.replaceChildren();
+        } catch (e) {}
+      } else {
+        // Show API error message if available
+        Swal.fire({
+          icon: 'error',
+          title: 'Something went wrong',
+          text: data.message || 'Please try again or email us at stuartward1976@gmail.com.',
+          confirmButtonText: 'OK'
+        });
+      }
+
+      submitBtn.textContent = originalLabel;
+      submitBtn.disabled = false;
+    } catch (err) {
+      submitBtn.disabled = false;
+      Swal.fire({
+        icon: 'error',
+        title: 'Network error',
+        text: 'Please check your connection and try again.',
+        confirmButtonText: 'OK'
+      });
+    }
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // stop normal navigation
+    postForm();
+  });
+})();
+</script>
 
 
 <script>
@@ -447,5 +557,8 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="cookie.js" defer></script>
+
 </body>
 </html>

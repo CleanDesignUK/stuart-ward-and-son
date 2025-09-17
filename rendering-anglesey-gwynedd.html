@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plastering, Rendering, Damp Proofing & General Building | Anglesey & Gwynedd</title>
-  <meta name="description" content="Professional plastering, rendering, damp proofing and general building services across Anglesey, Gwynedd and North Wales. Smooth plaster finishes, durable exterior render, proven damp treatments and reliable property repairs." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>House Rendering in Anglesey & Gwynedd | Silicone, Monocouche, Sand & Cement</title>
+  <meta name="description" content="Local renderers for Anglesey, Gwynedd and North Wales. Silicone render, monocouche, sand and cement, crack repairs and colour matching. Weather protection and long lasting kerb appeal. Free quotes." />
 
-    <!-- Bootstrap (icons already used across the site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Condensed:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-     <!-- Favicon & app icons -->
+  <!-- Favicon & app icons -->
 <meta name="theme-color" content="#F1C40F">
 <meta name="msapplication-TileColor" content="#F1C40F">
 
@@ -20,72 +25,44 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F1C40F">
 
-  <!-- Fonts (match global) -->
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Global CSS -->
-      <link rel="stylesheet" href="cookie.css" />
-  <link rel="stylesheet" href="style.css" />
-  <!-- Page CSS -->
-  <link rel="stylesheet" href="services.css" />
+  <!-- Global styles you already have -->
+    <link rel="stylesheet" href="cookie.css" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Page-only styles -->
+  <link rel="stylesheet" href="plastering.css">
 
-  <!-- Structured data: Services list -->
+  <!-- JSON-LD: Local SEO -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Stuart Ward & Sons Services",
-    "areaServed": ["Anglesey", "Gwynedd", "North Wales"],
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Stuart Ward & Sons"
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Rendering Services",
+    "serviceType":"Silicone render, monocouche, sand and cement rendering, crack repairs and colour matching",
+    "provider":{
+      "@type":"LocalBusiness",
+      "name":"Stuart Ward & Sons",
+      "telephone":"07496647063",
+      "email":"stuartward1976@gmail.com",
+      "address":{
+        "@type":"PostalAddress",
+        "addressLocality":"Anglesey",
+        "addressRegion":"Gwynedd",
+        "addressCountry":"GB"
+      },
+      "areaServed":["Anglesey","Gwynedd","North Wales","Bangor","Caernarfon","Holyhead","Menai Bridge","Llandudno","Conwy","Chester","Liverpool"]
     },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Property Services",
-      "itemListElement": [
-        {
-          "@type": "OfferCatalog",
-          "name": "Plastering & Skimming",
-          "itemListElement": [{
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "serviceType": "Interior plastering, skimming, ceilings & walls" }
-          }]
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Exterior Rendering",
-          "itemListElement": [{
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "serviceType": "Sand & cement, monocouche, silicone render" }
-          }]
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Damp Proofing",
-          "itemListElement": [{
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "serviceType": "Rising damp treatments, tanking, moisture diagnostics" }
-          }]
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "General Building & Repairs",
-          "itemListElement": [{
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "serviceType": "Small extensions, brick & blockwork, repointing, property repairs" }
-          }]
-        }
-      ]
-    }
+    "areaServed":["Anglesey","Gwynedd","North Wales"]
   }
   </script>
 </head>
 <body>
-
-  <!-- ======================================================
+    <!-- ======================================================
      COOKIE CONSENT BANNER
      ====================================================== -->
 <div id="cookie-banner"
@@ -193,82 +170,155 @@
   </div>
   <!-- /Offcanvas -->
 
+<header class="plaster-hero">
+  <div class="ph-inner"> <!-- NEW: centers the hero content -->
+    <div class="ph-copy">
+      <p class="ph-eyebrow">• Anglesey &amp; Gwynedd</p>
+      <h1 class="ph-title">
+         Durable <span class="accent">coloured render</span><br>
+          with weatherproof protection<br> and kerb appeal
+      </h1>
 
-  <!-- HERO -->
-  <header class="srv-hero">
-    <div class="srv-hero-inner container-xxl">
-      <p class="eyebrow">• Services</p>
-      <h1 class="srv-title">Our Range of Quality Services Across Anglesey</h1>
-      <p class="srv-sub">Plastering, rendering, damp proofing and general building for homes and landlords in Anglesey, Gwynedd and North Wales.</p>
+      <a class="cta-main" href="contact.html">
+        <span>Get Your Rendering Quote</span>
+        <span class="cta-bubble"><i class="bi bi-arrow-up-right"></i></span>
+      </a>
     </div>
-  </header>
 
-  <!-- INTRO (SEO copy) -->
-  <section class="srv-intro container-xxl">
-    <p>
-      Choose a local, experienced team for smooth <strong>plastering and skimming</strong>, durable <strong>exterior rendering</strong>, proven <strong>damp proofing</strong> and reliable <strong>general building</strong>. We cover
-      <strong>Anglesey, Gwynedd and nearby North Wales towns</strong> including Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno and Conwy.
-      Every job is completed with clean workmanship and a tidy finish.
-    </p>
+    <div class="ph-visual">
+      <img src="rendering-hero.jpg" alt="Local plasterer finishing a living room wall">
+      <div class="ph-badge">
+        <strong>Congratulations!</strong>
+        <small>Your wall is crack-free.</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- TABS: Main plastering angles -->
+  <section class="plaster-tabs container-xxl">
+    <div class="tabbar" role="tablist">
+      <button class="tab current" data-tab="repairs" aria-selected="true">Silicone Render</button>
+      <button class="tab" data-tab="skim">Monocouche</button>
+      <button class="tab" data-tab="decor">Sand & Cement</button>
+    </div>
+
+    <!-- Panel: Silicone -->
+    <article id="panel-repairs" class="panel current" role="tabpanel">
+      <figure class="panel-media">
+        <img src="silicon-render.jpg" alt="Silicone render application with mesh and coloured topcoat">
+      </figure>
+      <div class="panel-copy">
+        <h2>Silicone render that stays clean and flexible</h2>
+        <p>
+          Silicone systems give a modern textured finish that resists algae and hairline cracking. Ideal for coastal properties around <strong>Anglesey, Gwynedd and North Wales</strong>, silicone render lets walls breathe while keeping rain out.
+        </p>
+        <ul class="ticks">
+          <li>Mesh reinforced basecoat for stability</li>
+          <li>Choice of grain size and hundreds of colours</li>
+          <li>Low maintenance, water repellent surface</li>
+          <li>Great for old and new substrates including blockwork and insulation boards</li>
+        </ul>
+
+        <h4>Installation steps</h4>
+        <ul class="process">
+          <li><strong>Prep</strong> - remove loose material and prime.</li>
+          <li><strong>Base</strong> - apply adhesive base with full mesh embed.</li>
+          <li><strong>Key</strong> - levelling passes for a flat plane.</li>
+          <li><strong>Finish</strong> - silicone topcoat in the selected colour and grain.</li>
+        </ul>
+
+        <details class="mini-faq">
+          <summary>Can you colour match an existing elevation?</summary>
+          <div>Yes. We can match close equivalents or repaint adjoining areas for a uniform appearance.</div>
+        </details>
+      </div>
+    </article>
+
+    <!-- Panel: Monocouche -->
+    <article id="panel-skim" class="panel" role="tabpanel" hidden>
+      <figure class="panel-media">
+        <img src="monocouche.jpg" alt="Monocouche through-colour render being ruled off and scraped to finish">
+      </figure>
+      <div class="panel-copy">
+        <h2>Monocouche through colour render for crisp lines</h2>
+        <p>
+          Monocouche is a one coat, through colour render that is machine sprayable and scraped back for a sharp, uniform look. It delivers strong weather protection and fast application that keeps projects on schedule.
+        </p>
+        <ul class="ticks">
+          <li>Through colour means no painting required</li>
+          <li>Scraped finish with crisp arrises around windows</li>
+          <li>Large colour palette with UV stable pigments</li>
+          <li>Excellent value for new builds and extensions</li>
+        </ul>
+
+        <div class="stat-badges">
+          <span class="badge-soft">Fast application</span>
+          <span class="badge-soft">Through colour</span>
+          <span class="badge-soft">Uniform finish</span>
+        </div>
+
+        <details class="mini-faq">
+          <summary>Is monocouche suitable for old stone walls?</summary>
+          <div>It can be, but we assess breathability and movement first. Silicone systems are often better on mixed or moving substrates.</div>
+        </details>
+      </div>
+    </article>
+
+    <!-- Panel: Sand & Cement -->
+    <article id="panel-decor" class="panel" role="tabpanel" hidden>
+      <figure class="panel-media">
+        <img src="sand-and-cement.jpg" alt="Traditional sand and cement render being floated prior to sponge finish">
+      </figure>
+      <div class="panel-copy">
+        <h2>Traditional sand and cement rendering with modern additives</h2>
+        <p>
+          For cottages, farmhouses and repairs to existing areas, a well mixed sand and cement system still performs brilliantly. We use correct ratios, waterproofers and fibres, followed by a float or sponge finish ready for paint.
+        </p>
+        <ul class="ticks">
+          <li>Patch repairs and full elevations</li>
+          <li>Chimney and weather detail expertise</li>
+          <li>Breathable paints and colour advice</li>
+          <li>Tie in neatly to stone features and sills</li>
+        </ul>
+
+        <p>
+          Working across <strong>Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno and Conwy</strong>, we protect your home from wind driven rain and lift kerb appeal.
+        </p>
+
+        <details class="mini-faq">
+          <summary>How long before we can paint new render?</summary>
+          <div>Sand and cement needs a longer cure. We will advise safe paint windows based on weather and thickness.</div>
+        </details>
+      </div>
+    </article>
   </section>
 
-<!-- SERVICES GRID (portrait image centered, 2 cards left + 2 cards right) -->
-<section class="services-stack container-xxl">
+  <!-- Feature cards -->
+  <section class="feat-wrap container-xxl">
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="feat-ico">🎨</div>
+        <h3>Colour Matching</h3>
+        <p>Hundreds of shades with samples on site so you can choose the perfect tone for your property.</p>
+      </div>
 
-  <!-- Left column (2 stacked cards) -->
-  <div class="col-stack left">
-    <article class="svc-card">
-      <div class="svc-icon"><i class="bi bi-bricks"></i></div>
-      <h3 class="svc-title">Plastering &amp; Skimming</h3>
-      <p class="svc-copy">
-        Glass-flat skim coats, ceilings and walls, plasterboard and bonding for a
-        smooth, paint-ready finish across Anglesey, Gwynedd and nearby towns.
-      </p>
-      <a href="plastering.html" class="svc-link">Explore Plastering Services</a>
-    </article>
+      <div class="feat">
+        <div class="feat-ico">🛡️</div>
+        <h3>Weather Protection</h3>
+        <p>Systems designed for coastal exposure that resist cracking, algae growth and heavy rain.</p>
+      </div>
 
-    <article class="svc-card">
-      <div class="svc-icon"><i class="bi bi-droplet-half"></i></div>
-      <h3 class="svc-title">Damp Proofing</h3>
-      <p class="svc-copy">
-        Rising damp treatments, tanking and moisture diagnostics with
-        manufacturer-backed products and after-care guidance.
-      </p>
-      <a href="damp-proofing-anglesey-gwynedd.html" class="svc-link">See Damp Proofing Options</a>
-    </article>
-  </div>
+      <div class="feat">
+        <div class="feat-ico">✅</div>
+        <h3>Long Life Systems</h3>
+        <p>Manufacturer guided specifications and neat detailing around windows, pipes and eaves for durability.</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- Middle portrait image (spans vertically) -->
-  <figure class="svc-portrait">
-    <!-- Use your own tall image here -->
-    <img src="hero-4.jpg"
-         alt="Clean interior showing high quality finishing work" loading="lazy">
-  </figure>
-
-  <!-- Right column (2 stacked cards) -->
-  <div class="col-stack right">
-    <article class="svc-card">
-      <div class="svc-icon"><i class="bi bi-border-style"></i></div>
-      <h3 class="svc-title">Exterior Rendering</h3>
-      <p class="svc-copy">
-        Sand and cement, monocouche and silicone render for strong weather
-        protection and long-lasting kerb appeal.
-      </p>
-      <a href="rendering-anglesey-gwynedd.html" class="svc-link">Talk Rendering Options</a>
-    </article>
-
-    <article class="svc-card">
-      <div class="svc-icon"><i class="bi bi-hammer"></i></div>
-      <h3 class="svc-title">General Building &amp; Repairs</h3>
-      <p class="svc-copy">
-        Brick and blockwork, repointing, small extensions and practical property
-        repairs for homeowners and landlords.
-      </p>
-      <a href="general-building-and-painting-anglesey-gwynedd.html" class="svc-link">View Building &amp; Repair Work</a>
-    </article>
-  </div>
-
-</section>
 
 <!-- SIMPLE TESTIMONIALS / REVIEWS -->
 <section id="reviews" class="reviews-section">
@@ -530,7 +580,7 @@
   </div>
 </section>
 
- <!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
   <div class="container-xxl footer-grid">
     <!-- Brand / About -->
@@ -635,6 +685,28 @@
     }
   </script>
 
+  <script>
+    // tab switching
+    const tabs = document.querySelectorAll('.tabbar .tab');
+    const panels = {
+      repairs: document.getElementById('panel-repairs'),
+      skim: document.getElementById('panel-skim'),
+      decor: document.getElementById('panel-decor')
+    };
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabs.forEach(b => b.classList.remove('current'));
+        Object.values(panels).forEach(p => { p.classList.remove('current'); p.hidden = true; });
+        btn.classList.add('current');
+        const key = btn.dataset.tab;
+        panels[key].classList.add('current');
+        panels[key].hidden = false;
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
@@ -701,6 +773,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
   <script src="cookie.js" defer></script>
 

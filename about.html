@@ -27,6 +27,7 @@
 
 
   <!-- Global styles (your existing file) -->
+    <link rel="stylesheet" href="cookie.css" />
   <link rel="stylesheet" href="style.css" />
   <!-- Page-only styles -->
   <link rel="stylesheet" href="about.css" />
@@ -40,8 +41,8 @@
     "name": "Stuart Ward & Sons",
     "url": "https://www.yourdomain.co.uk/about.html",
     "image": "https://www.yourdomain.co.uk/about-hero.jpg",
-    "telephone": "+44 1234 567890",
-    "email": "hello@yourdomain.co.uk",
+    "telephone": "07496647063",
+    "email": "stuartward1976@gmail.com",
     "priceRange": "££",
     "description": "Local plastering, rendering and damp proofing specialists serving Anglesey, Gwynedd & North Wales for 30+ years. Smooth plaster finishes, durable exterior rendering, and proven damp treatments for homeowners, landlords, and contractors.",
     "address": {
@@ -81,7 +82,38 @@
 </head>
 <body>
 
-  <!-- Centered Navbar (pill) -->
+  <!-- ======================================================
+     COOKIE CONSENT BANNER
+     ====================================================== -->
+<div id="cookie-banner"
+     class="cookie-banner visually-hidden"
+     role="dialog"
+     aria-live="polite"
+     aria-label="Cookie consent banner">
+
+  <p class="cookie-text mb-2">
+    🍪 We use cookies to improve your browsing experience, deliver
+    personalised content, and analyse our traffic. By clicking
+    “Accept All”, you consent to our use of cookies.
+    See our <a href="cookie-policy.html" class="cookie-link">Cookie&nbsp;Policy</a>
+    for details.
+  </p>
+
+  <div class="cookie-actions d-flex gap-2">
+    <button id="cookie-accept"
+            class="btn btn-primary btn-sm flex-grow-1">
+      Accept&nbsp;All 🍪
+    </button>
+
+    <button id="cookie-decline"
+            class="btn btn-outline-secondary btn-sm flex-grow-1">
+      Decline
+    </button>
+  </div>
+</div>
+<!-- /COOKIE BANNER -->
+
+   <!-- Centered Navbar (pill) -->
   <nav class="navbar navbar-light hero-nav rounded-pill">
     <div class="container-fluid hero-nav-inner">
 
@@ -101,9 +133,9 @@
           <ul class="dropdown-menu rounded-4 shadow">
             <li><a class="dropdown-item" href="services.html">All Services</a></li>
             <li><a class="dropdown-item" href="plastering.html">Plastering</a></li>
-            <li><a class="dropdown-item" href="damp-roofing.html">Damp Proofing</a></li>
-            <li><a class="dropdown-item" href="rendering.html">Rendering</a></li>
-            <li><a class="dropdown-item" href="general-building.html">General Building &amp; Painting</a></li>
+            <li><a class="dropdown-item" href="damp-proofing-anglesey-gwynedd.html">Damp Proofing</a></li>
+            <li><a class="dropdown-item" href="rendering-anglesey-gwynedd.html">Rendering</a></li>
+            <li><a class="dropdown-item" href="general-building-and-painting-anglesey-gwynedd.html">General Building &amp; Painting</a></li>
           </ul>
         </div>
 
@@ -143,9 +175,9 @@
             <ul class="list-unstyled ps-3 mt-2">
               <li><a href="services.html" class="mobile-sub">All Services</a></li>
               <li><a href="plastering.html" class="mobile-sub">Plastering</a></li>
-              <li><a href="damp-roofing.html" class="mobile-sub">Damp Proofing</a></li>
-              <li><a href="rendering.html" class="mobile-sub">Rendering</a></li>
-              <li><a href="general-building.html" class="mobile-sub">General Building &amp; Painting</a></li>
+              <li><a href="damp-proofing-anglesey-gwynedd.html" class="mobile-sub">Damp Proofing</a></li>
+              <li><a href="rendering-anglesey-gwynedd.html" class="mobile-sub">Rendering</a></li>
+              <li><a href="general-building-and-painting-anglesey-gwynedd.html" class="mobile-sub">General Building &amp; Painting</a></li>
             </ul>
           </div>
         </li>
@@ -438,8 +470,8 @@
         </div>
 
         <!-- Right: form -->
-        <form class="cta-form-panel" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+        <form id="ctaQuoteForm" class="cta-form-panel" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="ae44b6d0-9991-4f69-974e-802f107a5cf3" />
           <input type="hidden" name="subject" value="Website quote request (Final CTA)" />
           <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" />
 
@@ -460,10 +492,13 @@
             </div>
 
             <div class="field">
-              <label for="f-postcode">Postcode / Town</label>
-              <input id="f-postcode" name="postcode" type="text" required>
-            </div>
-
+      <label for="f-postcode">Are you in North Wales?</label>
+      <select id="f-postcode" name="service" required>
+        <option value="" disabled selected>Select an answer</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
             <div class="field span-2">
               <label for="f-service">What service do you need?</label>
               <select id="f-service" name="service" required>
@@ -528,9 +563,9 @@
     <nav class="footer-col">
       <h4 class="footer-title">Policies</h4>
       <ul class="footer-list">
-        <li><a class="footer-link" href="#cookies">Cookie Policy</a></li>
-        <li><a class="footer-link" href="#privacy">Privacy Policy</a></li>
-        <li><a class="footer-link" href="#terms">Terms of Service</a></li>
+        <li><a class="footer-link" href="cookie-policy.html">Cookie Policy</a></li>
+        <li><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a class="footer-link" href="terms-and-conditions.html">Terms of Service</a></li>
       </ul>
     </nav>
 
@@ -598,8 +633,73 @@
   <section id="rendering"></section>
   <section id="general"></section>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+(function () {
+  const form = document.getElementById('ctaQuoteForm');
+  if (!form) return;
+
+  const submitBtn = form.querySelector('.cta-submit');
+  const originalHTML = submitBtn.innerHTML;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    // Use built-in HTML validation first
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending…';
+
+    try {
+      const fd = new FormData(form);
+
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: fd,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok && (data.success === true || data.message)) {
+        await Swal.fire({
+          icon: 'success',
+          title: 'Thank you!',
+          text: 'Our team will get in touch with you soon.',
+          confirmButtonText: 'OK'
+        });
+        form.reset();
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Something went wrong',
+          text: data.message || 'Please try again or email us at stuartward1976@gmail.com.',
+          confirmButtonText: 'OK'
+        });
+      }
+    } catch (err) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Network error',
+        text: 'Please check your connection and try again.',
+        confirmButtonText: 'OK'
+      });
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalHTML;
+    }
+  });
+})();
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="cookie.js" defer></script>
+
 
 </body>
 </html>

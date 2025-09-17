@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plastering, Rendering, Damp Proofing & General Building | Anglesey & Gwynedd</title>
-  <meta name="description" content="Professional plastering, rendering, damp proofing and general building services across Anglesey, Gwynedd and North Wales. Smooth plaster finishes, durable exterior render, proven damp treatments and reliable property repairs." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plastering in Anglesey & Gwynedd | Smooth Walls, Ceilings, Skimming & Repairs</title>
+  <title>Damp Proofing in Anglesey & Gwynedd | Rising Damp Treatment, Condensation Control, Tanking</title>
+  <meta name="description" content="Local damp proofing specialists for Anglesey, Gwynedd and North Wales. Rising damp treatment, penetrating damp repairs, condensation control, basement tanking and surveys. Fast quotes and manufacturer-backed guarantees." />
 
-    <!-- Bootstrap (icons already used across the site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Condensed:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-     <!-- Favicon & app icons -->
+  <!-- Favicon & app icons -->
 <meta name="theme-color" content="#F1C40F">
 <meta name="msapplication-TileColor" content="#F1C40F">
 
@@ -20,71 +26,43 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F1C40F">
 
-  <!-- Fonts (match global) -->
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Global CSS -->
-      <link rel="stylesheet" href="cookie.css" />
-  <link rel="stylesheet" href="style.css" />
-  <!-- Page CSS -->
-  <link rel="stylesheet" href="services.css" />
+  <!-- Global styles you already have -->
+    <link rel="stylesheet" href="cookie.css" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Page-only styles -->
+  <link rel="stylesheet" href="plastering.css">
 
-  <!-- Structured data: Services list -->
+  <!-- JSON-LD: Local SEO -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Stuart Ward & Sons Services",
-    "areaServed": ["Anglesey", "Gwynedd", "North Wales"],
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Stuart Ward & Sons"
+    "@context":"https://schema.org",
+    "@type":"Service",
+     "name":"Damp Proofing Services",
+    "serviceType":"Rising damp treatment, penetrating damp repair, condensation control, tanking & waterproofing",
+    "provider":{
+      "@type":"LocalBusiness",
+      "name":"Stuart Ward & Sons",
+      "telephone":"07496647063",
+      "email":"stuartward1976@gmail.com",
+      "address":{
+        "@type":"PostalAddress",
+        "addressLocality":"Anglesey",
+        "addressRegion":"Gwynedd",
+        "addressCountry":"GB"
+      },
+      "areaServed":["Anglesey","Gwynedd","North Wales","Bangor","Caernarfon","Holyhead","Menai Bridge","Llandudno","Conwy","Chester","Liverpool"]
     },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Property Services",
-      "itemListElement": [
-        {
-          "@type": "OfferCatalog",
-          "name": "Plastering & Skimming",
-          "itemListElement": [{
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "serviceType": "Interior plastering, skimming, ceilings & walls" }
-          }]
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Exterior Rendering",
-          "itemListElement": [{
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "serviceType": "Sand & cement, monocouche, silicone render" }
-          }]
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Damp Proofing",
-          "itemListElement": [{
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "serviceType": "Rising damp treatments, tanking, moisture diagnostics" }
-          }]
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "General Building & Repairs",
-          "itemListElement": [{
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "serviceType": "Small extensions, brick & blockwork, repointing, property repairs" }
-          }]
-        }
-      ]
-    }
+    "areaServed":["Anglesey","Gwynedd","North Wales"]
   }
   </script>
 </head>
 <body>
-
   <!-- ======================================================
      COOKIE CONSENT BANNER
      ====================================================== -->
@@ -194,81 +172,154 @@
   <!-- /Offcanvas -->
 
 
-  <!-- HERO -->
-  <header class="srv-hero">
-    <div class="srv-hero-inner container-xxl">
-      <p class="eyebrow">• Services</p>
-      <h1 class="srv-title">Our Range of Quality Services Across Anglesey</h1>
-      <p class="srv-sub">Plastering, rendering, damp proofing and general building for homes and landlords in Anglesey, Gwynedd and North Wales.</p>
-    </div>
-  </header>
+<header class="plaster-hero">
+  <div class="ph-inner"> <!-- NEW: centers the hero content -->
+    <div class="ph-copy">
+      <p class="ph-eyebrow">• Anglesey &amp; Gwynedd</p>
+      <h1 class="ph-title">
+        Stop <span class="accent">damp for good</span><br>
+          with expert local<br> damp proofing
+      </h1>
 
-  <!-- INTRO (SEO copy) -->
-  <section class="srv-intro container-xxl">
-    <p>
-      Choose a local, experienced team for smooth <strong>plastering and skimming</strong>, durable <strong>exterior rendering</strong>, proven <strong>damp proofing</strong> and reliable <strong>general building</strong>. We cover
-      <strong>Anglesey, Gwynedd and nearby North Wales towns</strong> including Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno and Conwy.
-      Every job is completed with clean workmanship and a tidy finish.
-    </p>
+      <a class="cta-main" href="contact.html">
+        <span>Book a free damp survey</span>
+        <span class="cta-bubble"><i class="bi bi-arrow-up-right"></i></span>
+      </a>
+    </div>
+
+    <div class="ph-visual">
+      <img src="damp-proofing-hero.jpg" alt="Local damp proofing specialist carrying out a moisture survey">
+      <div class="ph-badge">
+        <strong>Congratulations!</strong>
+        <small>Your walls are paint-ready.</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- TABS: Main plastering angles -->
+  <section class="plaster-tabs container-xxl">
+      <div class="tabbar" role="tablist">
+      <button class="tab current" data-tab="repairs" aria-selected="true">Rising Damp</button>
+      <button class="tab" data-tab="skim">Penetrating Damp & Leaks</button>
+      <button class="tab" data-tab="decor">Condensation & Ventilation</button>
+    </div>
+
+    <!-- Panel: Rising Damp -->
+    <article id="panel-repairs" class="panel current" role="tabpanel">
+      <figure class="panel-media">
+        <img src="rising-damp.jpg" alt="Rising damp treatment and replastering after salt contamination">
+      </figure>
+      <div class="panel-copy">
+        <h2>Rising damp treatment and salt-contaminated plaster replacement</h2>
+        <p>
+          If moisture is travelling up from the ground, we install a new chemical damp proof course, remove contaminated plaster and re-plaster with the correct salt resistant system. Our technicians cover <strong>Anglesey, Gwynedd and North Wales</strong> with fast surveys and written reports.
+        </p>
+        <ul class="ticks">
+          <li>Accurate moisture readings and salt testing</li>
+          <li>Injected DPC or pressure DPC where required</li>
+          <li>Breathable renovation plasters and mesh</li>
+          <li>Neat skirting and joinery refits</li>
+        </ul>
+
+        <h4>Typical process</h4>
+        <ul class="process">
+          <li><strong>Survey</strong> - locate moisture sources and salt bands.</li>
+          <li><strong>Remove</strong> - strip contaminated plaster to the correct height.</li>
+          <li><strong>Treat</strong> - install new DPC and prime masonry.</li>
+          <li><strong>Re-plaster</strong> - apply salt resistant base and skim for a paint-ready finish.</li>
+        </ul>
+
+        <details class="mini-faq">
+          <summary>How long before we can paint the new plaster?/summary>
+          <div>Allow the system to dry naturally. We advise a breathable mist coat followed by durable matt once fully dry.</div>
+        </details>
+      </div>
+    </article>
+
+    <!-- Panel: Penetrating Damp & Leaks -->
+    <article id="panel-skim" class="panel" role="tabpanel" hidden>
+      <figure class="panel-media">
+        <img src="penetrating-damp-leaks.jpg" alt="Penetrating damp investigation around chimneys, walls and gutters">
+      </figure>
+      <div class="panel-copy">
+        <h2>Penetrating damp traced and fixed</h2>
+        <p>
+          Wind-driven rain, failed pointing, cracked render, leaking gutters and chimney issues can push water through walls. We find the cause, carry out the repair and restore the interior finish so rooms stay dry.
+        </p>
+        <ul class="ticks">
+          <li>External surveys, thermal checks and endoscope inspections</li>
+          <li>Repointing, small rendering repairs and flashings</li>
+          <li>Stain blocking and re-plastering internally</li>
+          <li>Insurer quotes and photo documentation available</li>
+        </ul>
+
+        <div class="stat-badges">
+          <span class="badge-soft">Root-cause diagnostics</span>
+          <span class="badge-soft">Exterior repairs</span>
+          <span class="badge-soft">Interior restoration</span>
+        </div>
+
+        <details class="mini-faq">
+          <summary>Do you repair the outside as well as the inside?</summary>
+          <div>Yes. We handle repointing, small render patches, guttering and flashings, then put the interior back like new.</div>
+        </details>
+      </div>
+    </article>
+
+    <!-- Panel: Condensation & Ventilation -->
+    <article id="panel-decor" class="panel" role="tabpanel" hidden>
+      <figure class="panel-media">
+        <img src="condensation-ventilation.jpg" alt="Condensation control with ventilation upgrades and anti mould coatings">
+      </figure>
+      <div class="panel-copy">
+        <h2>Condensation control that works</h2>
+        <p>
+          Black mould on walls and windows is usually caused by high humidity and poor air change. We measure humidity and temperature, then install the right ventilation upgrades and anti mould coatings for lasting results.
+        </p>
+        <ul class="ticks">
+          <li>Passive vents, trickle vents and continuous extract fans</li>
+          <li>Positive input ventilation for whole house solutions</li>
+          <li>Thermal lining options for cold bridges</li>
+          <li>Safe removal of mould and specialist anti mould paint</li>
+        </ul>
+
+        <p>
+          We advise on heating and airflow routines so properties in <strong>Bangor, Caernarfon, Holyhead, Menai Bridge, Llandudno and Conwy</strong> stay comfortable through winter.
+        </p>
+
+        <details class="mini-faq">
+          <summary>Will a dehumidifier fix condensation?</summary>
+          <div>Dehumidifiers help but are rarely a full solution. Improving extraction and fresh air supply is the long term fix.</div>
+        </details>
+      </div>
+    </article>
   </section>
 
-<!-- SERVICES GRID (portrait image centered, 2 cards left + 2 cards right) -->
-<section class="services-stack container-xxl">
+  <!-- Feature cards -->
+  <section class="feat-wrap container-xxl">
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="feat-ico">🧪</div>
+        <h3>Damp Surveys & Reports</h3>
+        <p>Moisture profiling, salt tests and written recommendations suitable for landlords, buyers and insurers.</p>
+      </div>
 
-  <!-- Left column (2 stacked cards) -->
-  <div class="col-stack left">
-    <article class="svc-card">
-      <div class="svc-icon"><i class="bi bi-bricks"></i></div>
-      <h3 class="svc-title">Plastering &amp; Skimming</h3>
-      <p class="svc-copy">
-        Glass-flat skim coats, ceilings and walls, plasterboard and bonding for a
-        smooth, paint-ready finish across Anglesey, Gwynedd and nearby towns.
-      </p>
-      <a href="plastering.html" class="svc-link">Explore Plastering Services</a>
-    </article>
+      <div class="feat">
+        <div class="feat-ico">🏠</div>
+        <h3>Basement Tanking</h3>
+        <p>Internal cementitious tanking and cavity drain membrane systems for cellars and below ground rooms.</p>
+      </div>
 
-    <article class="svc-card">
-      <div class="svc-icon"><i class="bi bi-droplet-half"></i></div>
-      <h3 class="svc-title">Damp Proofing</h3>
-      <p class="svc-copy">
-        Rising damp treatments, tanking and moisture diagnostics with
-        manufacturer-backed products and after-care guidance.
-      </p>
-      <a href="damp-proofing-anglesey-gwynedd.html" class="svc-link">See Damp Proofing Options</a>
-    </article>
-  </div>
-
-  <!-- Middle portrait image (spans vertically) -->
-  <figure class="svc-portrait">
-    <!-- Use your own tall image here -->
-    <img src="hero-4.jpg"
-         alt="Clean interior showing high quality finishing work" loading="lazy">
-  </figure>
-
-  <!-- Right column (2 stacked cards) -->
-  <div class="col-stack right">
-    <article class="svc-card">
-      <div class="svc-icon"><i class="bi bi-border-style"></i></div>
-      <h3 class="svc-title">Exterior Rendering</h3>
-      <p class="svc-copy">
-        Sand and cement, monocouche and silicone render for strong weather
-        protection and long-lasting kerb appeal.
-      </p>
-      <a href="rendering-anglesey-gwynedd.html" class="svc-link">Talk Rendering Options</a>
-    </article>
-
-    <article class="svc-card">
-      <div class="svc-icon"><i class="bi bi-hammer"></i></div>
-      <h3 class="svc-title">General Building &amp; Repairs</h3>
-      <p class="svc-copy">
-        Brick and blockwork, repointing, small extensions and practical property
-        repairs for homeowners and landlords.
-      </p>
-      <a href="general-building-and-painting-anglesey-gwynedd.html" class="svc-link">View Building &amp; Repair Work</a>
-    </article>
-  </div>
-
-</section>
+      <div class="feat">
+        <div class="feat-ico">✅</div>
+        <h3>Long Term Guarantees</h3>
+        <p>Manufacturer-backed product guarantees with clear after care so your property stays dry.</p>
+      </div>
+    </div>
+  </section>
 
 <!-- SIMPLE TESTIMONIALS / REVIEWS -->
 <section id="reviews" class="reviews-section">
@@ -530,7 +581,7 @@
   </div>
 </section>
 
- <!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
   <div class="container-xxl footer-grid">
     <!-- Brand / About -->
@@ -635,9 +686,8 @@
     }
   </script>
 
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script>
+<script>
 (function () {
   const form = document.getElementById('ctaQuoteForm');
   if (!form) return;
@@ -700,7 +750,30 @@
 </script>
 
 
+  <script>
+    // tab switching
+    const tabs = document.querySelectorAll('.tabbar .tab');
+    const panels = {
+      repairs: document.getElementById('panel-repairs'),
+      skim: document.getElementById('panel-skim'),
+      decor: document.getElementById('panel-decor')
+    };
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabs.forEach(b => b.classList.remove('current'));
+        Object.values(panels).forEach(p => { p.classList.remove('current'); p.hidden = true; });
+        btn.classList.add('current');
+        const key = btn.dataset.tab;
+        panels[key].classList.add('current');
+        panels[key].hidden = false;
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
   <script src="cookie.js" defer></script>
 
