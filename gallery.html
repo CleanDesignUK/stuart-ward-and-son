@@ -1,117 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>About | Stuart Ward & Sons — Plastering, Rendering & Damp Proofing in Anglesey & Gwynedd</title>
-  <meta name="description" content="About Stuart Ward & Sons. 30+ years providing plastering, rendering & damp proofing across Anglesey, Gwynedd & North Wales. Local specialists for smooth plaster finishes, exterior rendering and proven damp treatments." />
-  <!-- Fonts -->
+  <!-- SEO -->
+  <title>Gallery | Plastering & Rendering in Anglesey | Stuart Ward & Son</title>
+  <meta name="description" content="Project gallery of plastering, skimming, plasterboarding, taping & jointing, and house rendering across Anglesey, Gwynedd and North Wales. See recent work by Stuart Ward & Son." />
+  <link rel="canonical" href="https://stuartwardandson.uk/gallery.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gallery | Plastering & Rendering in Anglesey" />
+  <meta property="og:description" content="See completed plastering and rendering projects across Anglesey & Gwynedd by Stuart Ward & Son." />
+  <meta property="og:url" content="https://stuartwardandson.uk/gallery.html" />
+  <meta property="og:image" content="https://stuartwardandson.uk/stuart-ward.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gallery | Plastering & Rendering in Anglesey" />
+  <meta name="twitter:description" content="Recent plastering and rendering projects by Stuart Ward & Son across Anglesey & Gwynedd." />
+  <meta name="twitter:image" content="https://stuartwardandson.uk/stuart-ward.jpg" />
+
+  <!-- Favicon & app icons -->
+  <meta name="theme-color" content="#F1C40F">
+  <meta name="msapplication-TileColor" content="#F1C40F">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="stuart-ward-and-son-logo.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F1C40F">
+
+  <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap (icons + offcanvas for your existing navbar) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="cookie.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
 
-   <!-- Favicon & app icons -->
-<meta name="theme-color" content="#F1C40F">
-<meta name="msapplication-TileColor" content="#F1C40F">
-
-<link rel="icon" href="/favicon.ico" sizes="any">            <!-- fallback -->
-<link rel="icon" type="image/svg+xml" href="suart-ward-and-son-logo.jpg">   <!-- crisp on all sizes -->
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">   <!-- 180×180 -->
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F1C40F">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
 
-  <!-- Global styles (your existing file) -->
-    <link rel="stylesheet" href="cookie.css" />
-  <link rel="stylesheet" href="style.css" />
-  <!-- Page-only styles -->
-  <link rel="stylesheet" href="about.css" />
-
-
-  <!-- Local Business Schema (JSON-LD) -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "Stuart Ward & Sons",
-    "url": "https://www.yourdomain.co.uk/about.html",
-    "image": "https://www.yourdomain.co.uk/about-hero.jpg",
-    "telephone": "07496647063",
-    "email": "stuartward1976@gmail.com",
-    "priceRange": "££",
-    "description": "Local plastering, rendering and damp proofing specialists serving Anglesey, Gwynedd & North Wales for 30+ years. Smooth plaster finishes, durable exterior rendering, and proven damp treatments for homeowners, landlords, and contractors.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Example Road",
-      "addressLocality": "Beaumaris",
-      "addressRegion": "Anglesey",
-      "postalCode": "LL58",
-      "addressCountry": "GB"
-    },
-    "areaServed": [
-      {"@type":"Place","name":"Anglesey"},
-      {"@type":"Place","name":"Gwynedd"},
-      {"@type":"Place","name":"Bangor"},
-      {"@type":"Place","name":"Caernarfon"},
-      {"@type":"Place","name":"Holyhead"},
-      {"@type":"Place","name":"Menai Bridge"},
-      {"@type":"Place","name":"Llandudno"},
-      {"@type":"Place","name":"Conwy"},
-      {"@type":"Place","name":"Chester"},
-      {"@type":"Place","name":"Liverpool"}
-    ],
-    "sameAs": [
-      "https://facebook.com/yourpage",
-      "https://maps.google.com/?cid=YOUR-GMB-ID"
-    ],
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday","Tuesday","Wednesday","Thursday","Friday"
-      ],
-      "opens": "08:00",
-      "closes": "17:30"
-    }]
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Project Gallery – Stuart Ward & Son",
+    "about":["Plastering","Rendering","Skimming","Plasterboarding","Taping and jointing"],
+    "provider":{
+      "@type":"LocalBusiness",
+      "name":"Stuart Ward & Son",
+      "telephone":"07496647063",
+      "email":"stuartward1976@gmail.com",
+      "address":{"@type":"PostalAddress","addressLocality":"Anglesey","addressRegion":"Gwynedd","addressCountry":"GB"},
+      "areaServed":["Anglesey","Gwynedd","North Wales","Bangor","Caernarfon","Holyhead","Menai Bridge","Llandudno","Conwy","Chester","Liverpool"]
+    }
   }
   </script>
 </head>
 <body>
-
-  <!-- ======================================================
-     COOKIE CONSENT BANNER
-     ====================================================== -->
-<div id="cookie-banner"
-     class="cookie-banner visually-hidden"
-     role="dialog"
-     aria-live="polite"
-     aria-label="Cookie consent banner">
-
-  <p class="cookie-text mb-2">
-    🍪 We use cookies to improve your browsing experience, deliver
-    personalised content, and analyse our traffic. By clicking
-    “Accept All”, you consent to our use of cookies.
-    See our <a href="cookie-policy.html" class="cookie-link">Cookie&nbsp;Policy</a>
-    for details.
-  </p>
-
-  <div class="cookie-actions d-flex gap-2">
-    <button id="cookie-accept"
-            class="btn btn-primary btn-sm flex-grow-1">
-      Accept&nbsp;All 🍪
-    </button>
-
-    <button id="cookie-decline"
-            class="btn btn-outline-secondary btn-sm flex-grow-1">
-      Decline
-    </button>
-  </div>
-</div>
-<!-- /COOKIE BANNER -->
 
    <!-- Centered Navbar (pill) -->
   <nav class="navbar navbar-light hero-nav rounded-pill">
@@ -190,81 +140,93 @@
   </div>
   <!-- /Offcanvas -->
 
+  <!-- GALLERY -->
+  <section class="gallery-wrapper">
+    <header class="gallery-heading">
+      <h1>Explore Our Project Gallery</h1>
+      <p class="intro-copy">Plastering, skimming, plasterboarding, taping and jointing, and external house rendering completed across Anglesey, Gwynedd and nearby North Wales towns.</p>
+    </header>
 
+    <section class="container" id="gallery">
+      <div class="gallery-grid">
 
-  <!-- ===== HERO (About) ===== -->
-  <header class="about-hero" role="banner" aria-label="About Stuart Ward & Sons">
-    <img src="cta-hero-2.jpg" alt="Local plastering and rendering in Anglesey & Gwynedd" class="about-hero__img">
-    <div class="about-hero__overlay"></div>
+        <!-- RENDERING (Anglesey) -->
+        <a href="house-rendering-anglesey.jpg" class="glightbox" data-gallery="ward">
+          <img src="house-rendering-anglesey.jpg" alt="House rendering in Anglesey with roughcast finish" loading="lazy">
+        </a>
+        <a href="house-rendering-anglesey-2.jpg" class="glightbox" data-gallery="ward">
+          <img src="house-rendering-anglesey-2.jpg" alt="Anglesey new build rendered externally" loading="lazy">
+        </a>
+        <a href="house-rendering-anglesey-3.jpg" class="glightbox" data-gallery="ward">
+          <img src="house-rendering-anglesey-3.jpg" alt="Front elevation rendering Anglesey property" loading="lazy">
+        </a>
+        <a href="house-rendering-anglesey-4.jpg" class="glightbox" data-gallery="ward">
+          <img src="house-rendering-anglesey-4.jpg" alt="Completed roughcast render Anglesey home" loading="lazy">
+        </a>
+        <a href="house-rendering-anglesey-5.jpg" class="glightbox" data-gallery="ward">
+          <img src="house-rendering-anglesey-5.jpg" alt="Side elevation external render in Anglesey" loading="lazy">
+        </a>
+        <a href="house-rendering-anglesey-6.jpg" class="glightbox" data-gallery="ward">
+          <img src="house-rendering-anglesey-6.jpg" alt="Anglesey house render with plinth detail" loading="lazy">
+        </a>
+        <a href="house-rendering-anglesey-7.jpg" class="glightbox" data-gallery="ward">
+          <img src="house-rendering-anglesey-7.jpg" alt="Rear elevation rendering Anglesey project" loading="lazy">
+        </a>
+        <a href="house-rendering-anglesey-8.jpg" class="glightbox" data-gallery="ward">
+          <img src="house-rendering-anglesey-8.jpg" alt="Garage and house rendered finish in Anglesey" loading="lazy">
+        </a>
 
-    <div class="about-hero__content container-xxl">
-      <p class="eyebrow">• About Stuart Ward &amp; Sons</p>
-      <h1 class="about-hero__title">
-        Trusted Plastering, Rendering &amp; Damp Proofing
-      </h1>
-      
-  <p class="hero-locale">
-    Across Anglesey, Gwynedd & North Wales
-  </p>
-      <p class="about-hero__lead">
-        For 30+ years we’ve delivered <strong>glass-flat plaster finishes</strong>, durable <strong>exterior rendering</strong>, and proven <strong>damp treatments</strong> for local homeowners, landlords and small contractors.
-      </p>
-      <div class="about-hero__cta">
-        <a href="contact.html" class="btn btn-accent rounded-pill px-4 py-2 fw-bold">Get a Fast Quote</a>
+        <!-- PLASTERING / INTERNAL -->
+        <a href="internal-plastering.jpg" class="glightbox" data-gallery="ward">
+          <img src="internal-plastering.jpg" alt="Internal plastering and skimming in Anglesey living room" loading="lazy">
+        </a>
+        <a href="skimming-internal-plastering-anglesey.jpg" class="glightbox" data-gallery="ward">
+          <img src="skimming-internal-plastering-anglesey.jpg" alt="Skim coat to ceilings and walls in Anglesey" loading="lazy">
+        </a>
+
+        <!-- CEILING / DRYLINING / TAPING -->
+        <a href="plastering-ceiling-drylining-anglesey.jpg" class="glightbox" data-gallery="ward">
+          <img src="plastering-ceiling-drylining-anglesey.jpg" alt="Ceiling plasterboarding and drylining in Anglesey" loading="lazy">
+        </a>
+        <a href="plastering-taping-jointing-anglesey.jpg" class="glightbox" data-gallery="ward">
+          <img src="plastering-taping-jointing-anglesey.jpg" alt="Taping and jointing plasterboard seams in Anglesey" loading="lazy">
+        </a>
+
+        <!-- WALL PLASTERING (Anglesey) -->
+        <a href="wall-plastering-anglesey-10.jpg" class="glightbox" data-gallery="ward">
+          <img src="wall-plastering-anglesey-10.jpg" alt="Wall and ceiling plastering in Anglesey loft room" loading="lazy">
+        </a>
+        <a href="wall-plastering-anglesey-11.jpg" class="glightbox" data-gallery="ward">
+          <img src="wall-plastering-anglesey-11.jpg" alt="Freshly skimmed living room walls in Anglesey" loading="lazy">
+        </a>
+
+        <!-- WORK IN PROGRESS (Anglesey) -->
+        <a href="wall-plastering-work-anglesey.jpg" class="glightbox" data-gallery="ward">
+          <img src="wall-plastering-work-anglesey.jpg" alt="Anglesey plastering work in progress" loading="lazy">
+        </a>
+        <a href="wall-plastering-work-anglesey-2.jpg" class="glightbox" data-gallery="ward">
+          <img src="wall-plastering-work-anglesey-2.jpg" alt="Ceiling skim finish during Anglesey renovation" loading="lazy">
+        </a>
+        <a href="wall-plastering-work-anglesey-3.jpg" class="glightbox" data-gallery="ward">
+          <img src="wall-plastering-work-anglesey-3.jpg" alt="Drylining and prep before plastering in Anglesey" loading="lazy">
+        </a>
+        <a href="wall-plastering-work-anglesey-4.jpg" class="glightbox" data-gallery="ward">
+          <img src="wall-plastering-work-anglesey-4.jpg" alt="Conservatory plastering finish in Anglesey" loading="lazy">
+        </a>
+        <a href="wall-plastering-work-anglesey-5.jpg" class="glightbox" data-gallery="ward">
+          <img src="wall-plastering-work-anglesey-5.jpg" alt="Anglesey project: smooth skim to internal reveals" loading="lazy">
+        </a>
+
+        <!-- TEAM -->
+        <a href="stuart-ward.jpg" class="glightbox" data-gallery="ward">
+          <img src="stuart-ward.jpg" alt="Stuart Ward on site in Anglesey after rendering works" loading="lazy">
+        </a>
+
       </div>
-    </div>
-  </header>
-
-  <!-- ===== MISSION / VISION ===== -->
-  <section class="mv-wrap" aria-labelledby="mv-title">
-    <div class="mv-glow mv-glow--left" aria-hidden="true"></div>
-    <div class="mv-glow mv-glow--right" aria-hidden="true"></div>
-
-    <div class="container-xxl">
-      <div class="mv-grid">
-
-        <!-- Mission -->
-        <div class="mv-text">
-          <h2 id="mv-title" class="mv-eyebrow">OUR MISSION</h2>
-          <p class="mv-lead">
-            We’re dedicated local partners on your property journey. Our mission is to make <strong>plastering</strong>, <strong>rendering</strong> and <strong>damp proofing</strong> straightforward, accountable and rewarding for everyone involved, from first-time buyers to seasoned landlords.
-          </p>
-          <p class="mv-p">
-            Every wall we skim, every ceiling we straighten and every damp issue we remedy is approached with the same standard: clean lines, crisp corners and finishes that are truly ready for paint.
-          </p>
-          <p class="mv-p">
-            We work with clear communication, dust-aware workflows and tidy sites, so your home in Anglesey, Gwynedd or wider North Wales looks great and feels great at handover.
-          </p>
-        </div>
-
-        <figure class="mv-img mv-img--right">
-          <img src="about-3.jpg" alt="Crisp exterior rendering work in North Wales" />
-        </figure>
-
-        <!-- Photo left -->
-        <figure class="mv-img mv-img--left">
-          <img src="about-4.jpg" alt="Smooth interior plaster finish with sharp edges" />
-        </figure>
-
-        <!-- Vision -->
-        <div class="mv-text">
-          <h2 class="mv-eyebrow">OUR VISION</h2>
-          <p class="mv-lead">
-            To be the <strong>go-to plastering &amp; rendering team in Anglesey &amp; Gwynedd</strong>, known for craftsmanship, reliability and genuine care for local homes.
-          </p>
-          <p class="mv-p">
-            We’re focused on long-lasting finishes, honest advice and innovation where it matters, from materials to methods, so your walls and exteriors continue to look sharp and perform well for years.
-          </p>
-          <p class="mv-p">
-            Whether it’s a damp survey in Bangor, a full re-skim in Menai Bridge or monocouche render in Llandudno, we’ll make it seamless, tidy and on schedule.
-          </p>
-        </div>
-
-      </div>
-    </div>
+    </section>
   </section>
 
-<!-- SIMPLE TESTIMONIALS / REVIEWS -->
+  <!-- SIMPLE TESTIMONIALS / REVIEWS -->
 <section id="reviews" class="reviews-section">
   <div class="container-thin">
 
@@ -499,6 +461,7 @@
         <option>No</option>
       </select>
     </div>
+
             <div class="field span-2">
               <label for="f-service">What service do you need?</label>
               <select id="f-service" name="service" required>
@@ -599,29 +562,7 @@
   </div>
 </footer>
 
-<script>
-  // Close offcanvas when a mobile link is clicked
-  document.querySelectorAll('#mobileMenu a[href^="#"]').forEach(function(el){
-    el.addEventListener('click', function(){
-      const oc = bootstrap.Offcanvas.getInstance(document.getElementById('mobileMenu'));
-      if (oc) oc.hide();
-    });
-  });
-  // Rotate chevron on accordion toggle
-  const accBtn = document.querySelector('.mobile-accordion');
-  const services = document.getElementById('mobileServices');
-  if (accBtn && services){
-    services.addEventListener('shown.bs.collapse', ()=>accBtn.classList.add('open'));
-    services.addEventListener('hidden.bs.collapse', ()=>accBtn.classList.remove('open'));
-  }
-</script>
-
-<script>
-  // tiny helper to keep the year current
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
-
+  
   <!-- Quote anchor target -->
   <section id="quote"></section>
   
@@ -634,7 +575,30 @@
   <section id="rendering"></section>
   <section id="general"></section>
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- JS (bottom of body) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+    // Close offcanvas when a mobile link is clicked
+    document.querySelectorAll('#mobileMenu a[href^="#"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        const oc = bootstrap.Offcanvas.getInstance(document.getElementById('mobileMenu'));
+        if (oc) oc.hide();
+      });
+    });
+    // Rotate chevron on accordion toggle
+    const accBtn = document.querySelector('.mobile-accordion');
+    const services = document.getElementById('mobileServices');
+    if (accBtn && services){
+      services.addEventListener('shown.bs.collapse', ()=>accBtn.classList.add('open'));
+      services.addEventListener('hidden.bs.collapse', ()=>accBtn.classList.remove('open'));
+    }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
 (function () {
   const form = document.getElementById('ctaQuoteForm');
@@ -697,10 +661,44 @@
 })();
 </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // tab switching
+    const tabs = document.querySelectorAll('.tabbar .tab');
+    const panels = {
+      repairs: document.getElementById('panel-repairs'),
+      skim: document.getElementById('panel-skim'),
+      decor: document.getElementById('panel-decor')
+    };
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabs.forEach(b => b.classList.remove('current'));
+        Object.values(panels).forEach(p => { p.classList.remove('current'); p.hidden = true; });
+        btn.classList.add('current');
+        const key = btn.dataset.tab;
+        panels[key].classList.add('current');
+        panels[key].hidden = false;
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+<!-- JS (bottom of body) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      zoomable: true
+    });
+  });
+</script>
+
 
   <script src="cookie.js" defer></script>
-
-
 </body>
 </html>

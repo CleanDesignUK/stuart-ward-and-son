@@ -1,0 +1,87 @@
+/* ---------- base ---------- */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;color:var(--text-dark);background:#fff}
+h1{
+  font-family:'Josefin Sans',sans-serif;
+  font-weight:700;line-height:1.1;
+  font-size:clamp(2rem,4vw+1rem,3.5rem);
+}
+
+/* ---------- wrapper & heading ---------- */
+.gallery-wrapper{
+  max-width:1400px;
+  margin:auto;
+  padding:2rem 1rem 4rem;
+}
+.gallery-heading{margin-bottom:2rem}
+.intro-copy{
+  font-size:1rem;
+  line-height:1.6;
+  max-width:600px;
+  margin-top:.8rem;
+}
+
+
+/* ---------- masonry grid via CSS columns ---------- */
+.gallery-grid{
+  column-count:3;              /* desktop: 3 masonry columns   */
+  column-gap:1.5rem;
+}
+
+@media(max-width:991.98px){    /* tablet: 2 columns           */
+  .gallery-grid{column-count:2}
+}
+@media(max-width:767.98px){    /* phone: 1 full-width column  */
+  .gallery-grid{column-count:1}
+}
+
+/* each anchor acts as a masonry block */
+.gallery-grid a{
+  display:block;
+  margin-bottom:1.5rem;        /* space between rows           */
+  break-inside:avoid;          /* keep images intact           */
+}
+
+/* shared image styling */
+.gallery-grid img{
+  width:100%;
+  height:auto;                 /* natural aspect ratio         */
+  display:block;
+  border:8px solid #fff;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  transition:transform .3s;
+}
+.gallery-grid a:hover img{transform:scale(1.03)}
+
+/* smaller border + heading on very small screens */
+@media(max-width:767.98px){
+  .gallery-grid img{border:4px solid #fff}
+  h1{font-size:clamp(1.8rem,5.5vw+1rem,2.2rem)}
+}
+
+/* Center the hero on the gallery page */
+.gallery-heading{
+  text-align:center;
+  max-width:900px;
+  margin:5rem auto 2rem;
+}
+.gallery-heading h1{ margin-bottom:.4rem; }
+.gallery-heading .intro-copy{
+  margin: .6rem auto 0;
+  max-width: 720px;
+}
+
+/* Make sure the lightbox sits above nav/cookie banners */
+.glightbox-container{ z-index: 99999 !important; }
+
+/* Always-visible, high-contrast arrows */
+.glightbox-container .gbtn{ opacity:1 !important; visibility:visible !important; }
+.glightbox-container .gprev,
+.glightbox-container .gnext{
+  width:56px; height:56px; border-radius:999px;
+  background:rgba(0,0,0,.65); box-shadow:0 6px 18px rgba(0,0,0,.35);
+}
+.glightbox-container .gprev{ left:16px; }
+.glightbox-container .gnext{ right:16px; }
+.glightbox-container .gprev svg,
+.glightbox-container .gnext svg{ width:26px; height:26px; fill:#fff; stroke:#fff; }
